@@ -26,7 +26,7 @@ const Button = ({
   return (
     <button
       style={{ letterSpacing: ".7px" }}
-      className={`text-white bg-common-purple transition-all duration-300 ease-in-out hover:bg-common-green rounded-lg px-9 py-4 font-semibold text-[17px] ${
+      className={`text-white bg-common-purple transition-all duration-300 ease-in-out hover:bg-common-green rounded-lg px-9 py-4 font-semibold text-[16px] md:text-[17px] ${
         uppercase && "uppercase"
       } ${className}`}
       onClick={onBtnClick}

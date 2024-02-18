@@ -18,8 +18,8 @@ const Title = ({
   if (h1)
     return (
       <h1
-        style={{ lineHeight: 1, ...style }}
-        className={`text-[80px] font-semibold text-common-black drop-shadow-2xl ${
+        style={{ lineHeight: 1.1, ...style }}
+        className={`text-[36px] xxs:text-[40px] xs:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px] font-semibold text-common-black drop-shadow-2xl ${
           uppercase && "uppercase"
         } ${className}`}
       >
@@ -29,8 +29,8 @@ const Title = ({
 
   return (
     <h2
-      style={{ lineHeight: 1, ...style }}
-      className={`text-[80px] font-semibold text-common-black  drop-shadow-lg ${
+      style={{ lineHeight: 1.1, ...style }}
+      className={`text-[36px] xxs:text-[40px] xs:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px] font-semibold text-common-black  drop-shadow-lg ${
         uppercase && "uppercase"
       } ${className} `}
     >
