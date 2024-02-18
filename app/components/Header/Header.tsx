@@ -29,7 +29,7 @@ const Header = ({ className = "" }: HeaderProps) => {
   return (
     <header
       className={` z-[100] w-full top-0 ${
-        isSticky ? "fixed bg-white shadow-sm" : "absolute"
+        isSticky ? "fixed bg-white shadow-sm stickyAnimation" : "absolute"
       } ${className}`}
     >
       <div className="container mx-auto flex items-center justify-between">
