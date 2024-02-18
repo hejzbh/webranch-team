@@ -2,10 +2,21 @@ import React from "react";
 // Next
 import dynamic from "next/dynamic";
 import Image from "next/image";
+// Constants
+import {
+  HERO_BTN_1_TEXT,
+  HERO_DESCRIPTION_TEXT,
+  HERO_PRETITLE_TEXT,
+  HERO_TITLE_TEXT,
+} from "@/app/constants/text";
 // Components
 const BackgroundImage = dynamic(
   () => import("@/app/components/ui/BackgroundImage")
 );
+const PreTitle = dynamic(() => import("@/app/components/ui/PreTitle"));
+const Title = dynamic(() => import("@/app/components/ui/Title"));
+const Description = dynamic(() => import("@/app/components/ui/Description"));
+const Button = dynamic(() => import("@/app/components/ui/Button"));
 // Interface
 interface HeroProps {
   className?: string;
@@ -20,19 +31,16 @@ const Hero = ({ className = "" }: HeroProps) => {
         loading="eager"
       />
       {/** Content */}
-      <div className="container mx-auto pt-[190px] pb-[88px] flex items-center justify-between space-x-7">
+      <div className="container mx-auto pt-[190px] pb-[88px] flex flex-col items-center justify-between space-y-7 lg:flex-row lg:space-y-0 lg:space-x-7">
         {/** Text */}
         <div className="flex-1">
           {/** Pretitle & Title & Description */}
-          <h3>Text</h3>
-          <h1 className="text-[70px] font-semibold" style={{ lineHeight: 1 }}>
-            Make a good plan & grow your business
-          </h1>
-          <p>description</p>
+          <PreTitle text={HERO_PRETITLE_TEXT} />
+          <Title h1 className="my-7" text={HERO_TITLE_TEXT} />
+          <Description text={HERO_DESCRIPTION_TEXT} />
           {/** Buttons */}
-          <div className="flex items-center space-x-2">
-            <button>button 1</button>
-            <button>button 1</button>
+          <div className="flex items-center space-x-2 mt-7">
+            <Button text={HERO_BTN_1_TEXT} uppercase />
           </div>
         </div>
         {/** Image */}

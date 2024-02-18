@@ -14,7 +14,7 @@ const config: Config = {
       md: "768px",
       // => @media (min-width: 768px) { ... }
 
-      lg: "1024px",
+      lg: "990px",
       // => @media (min-width: 1024px) { ... }
 
       xl: "1280px",
@@ -24,10 +24,16 @@ const config: Config = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      colors: {
+        "common-black-2": "#52525C",
+        "common-black": "#151718",
+        "common-purple": "#6864ED",
+        "common-green": "#33CC79",
+      },
       container: {
         padding: {
           DEFAULT: "1rem",
-          sm: "2rem",
+
           lg: "4rem",
           xl: "5rem",
           "2xl": "8rem",
