@@ -31,7 +31,7 @@ const Hero = ({ className = "" }: HeroProps) => {
         loading="eager"
       />
       {/** Content */}
-      <div className="container mx-auto pt-[190px] pb-[88px] flex flex-col items-center justify-between space-y-7 lg:flex-row lg:space-y-0 lg:space-x-7">
+      <div className="container mx-auto pt-[140px] md:pt-[190px] pb-[88px] flex flex-col items-center justify-between space-y-7 lg:flex-row lg:space-y-0 lg:space-x-7">
         {/** Text */}
         <div className="flex-1 flex flex-col justify-center items-center md:items-start">
           {/** Pretitle & Title & Description */}
