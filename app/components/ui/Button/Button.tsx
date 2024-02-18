@@ -16,7 +16,7 @@ const Button = ({
   href,
   uppercase,
 }: ButtonProps) => {
-  const router: any = href ? useRouter() : () => {};
+  const router: any = useRouter();
 
   function onBtnClick() {
     if (!href) return;

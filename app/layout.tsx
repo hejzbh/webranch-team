@@ -1,7 +1,12 @@
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
+//  Next
+import { Poppins } from "next/font/google";
+import type { Metadata } from "next";
+import dynamic from "next/dynamic";
+// Components
+const Header = dynamic(() => import("@/app/components/Header"));
 
+// Font
 const poppinsFont = Poppins({
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
@@ -19,7 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppinsFont.className}>{children}</body>
+      <body className={poppinsFont.className} style={{ minHeight: "200vh" }}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
