@@ -6,7 +6,17 @@ interface TitleProps {
   text: string;
   style?: React.CSSProperties;
   uppercase?: boolean;
+  size?: "small" | "medium" | "large";
 }
+
+const textSizeClasses = {
+  small:
+    "text-[22px] xxs:text-[24px] xs:text-[25px] md:text-[33px] xl:text-[37px] 2xl:text-[43px]",
+  medium:
+    "text-[36px] xxs:text-[40px] xs:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px]",
+  large:
+    "text-[36px] xxs:text-[40px] xs:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px]",
+};
 
 const Title = ({
   className = "",
@@ -14,12 +24,15 @@ const Title = ({
   text,
   style = {},
   uppercase,
+  size = "large",
 }: TitleProps) => {
   if (h1)
     return (
       <h1
         style={{ lineHeight: 1.1, ...style }}
-        className={`text-[36px] xxs:text-[40px] xs:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px] font-semibold text-common-black drop-shadow-2xl ${
+        className={`${
+          textSizeClasses[size]
+        } font-semibold text-common-black drop-shadow-2xl ${
           uppercase && "uppercase"
         } ${className}`}
       >
@@ -30,7 +43,9 @@ const Title = ({
   return (
     <h2
       style={{ lineHeight: 1.1, ...style }}
-      className={`text-[36px] xxs:text-[40px] xs:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px] font-semibold text-common-black  drop-shadow-lg ${
+      className={`${
+        textSizeClasses[size]
+      } font-semibold text-common-black  drop-shadow-lg ${
         uppercase && "uppercase"
       } ${className} `}
     >

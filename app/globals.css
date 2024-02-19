@@ -6,6 +6,15 @@
   animation: fadeIn 0.4s ease-in-out;
 }
 
+.creative-step-text {
+  -webkit-text-stroke: 1px #000;
+}
+
+.creative-step-text:hover {
+  color: #151718;
+}
+
+/* KEYFRAMES */
 @keyframes fadeIn {
   from {
     opacity: 0;
