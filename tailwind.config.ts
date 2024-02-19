@@ -31,6 +31,9 @@ const config: Config = {
         "common-black": "#151718",
         "common-purple": "#6864ED",
         "common-green": "#33CC79",
+        "tp-border-3": "#EDEFEB",
+        "text-body": "#6A6A74",
+        "nav-link-hover": "#6864ED",
       },
       container: {
         padding: {
