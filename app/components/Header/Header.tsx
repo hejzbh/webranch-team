@@ -41,7 +41,7 @@ const Header = ({ className = "" }: HeaderProps) => {
           className="hidden lg:flex flex-1 justify-center"
         />
         {/** Burger btn */}
-        <Button text="" className="!p-2 md:!p-4">
+        <Button text="" className="!p-2 md:!p-4" titleProp="Menu">
           <RxHamburgerMenu className="text-white text-[23px] md:text-[27px]" />
         </Button>
       </div>

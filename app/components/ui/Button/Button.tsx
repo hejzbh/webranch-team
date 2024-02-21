@@ -9,6 +9,7 @@ interface ButtonProps {
   uppercase?: boolean;
   href?: string;
   children?: React.ReactNode;
+  titleProp?: string;
 }
 
 const Button = ({
@@ -17,6 +18,7 @@ const Button = ({
   href,
   uppercase,
   children,
+  titleProp = text,
 }: ButtonProps) => {
   const router: any = useRouter();
 
@@ -32,7 +34,7 @@ const Button = ({
         uppercase && "uppercase"
       } ${className}`}
       onClick={onBtnClick}
-      title={text}
+      title={text || titleProp}
     >
       {text && text}
       {children && children}

@@ -33,6 +33,7 @@ const Project = ({ className, project }: ProjectProps) => {
         {/** Button (Display on hover) */}
         <Button
           text=""
+          titleProp="View Project Details"
           className="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] transition-all duration-400 ease-in-out !rounded-full !bg-common-green scale-50 !p-7 opacity-0 group-hover:opacity-100 group-hover:scale-100  shadow-md hover:opacity-70"
         >
           <ImArrowUpRight className="text-[23px]" />
