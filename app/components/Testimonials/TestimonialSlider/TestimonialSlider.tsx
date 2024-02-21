@@ -24,7 +24,6 @@ const TestimonialSlider = ({ className = "" }: TestimonialSliderProps) => {
   const [sliderRef] = useKeenSlider({
     loop: true,
     renderMode: "performance",
-    initial: 2,
     slides: {
       perView: slides,
       spacing: 120,
