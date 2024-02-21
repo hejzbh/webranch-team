@@ -37,6 +37,8 @@ const config: Config = {
         "common-green": "#33CC79",
         "tp-border-3": "#EDEFEB",
         "text-body": "#6A6A74",
+        upwork: "#73bb44",
+        "common-yellow": "#EED064",
         "nav-link-hover": "#6864ED",
       },
       container: {

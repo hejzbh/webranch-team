@@ -20,10 +20,10 @@ const Testimonials = ({ className = "" }: TestimonialsProps) => {
       {/** Heading */}
       <div className="container mx-auto text-center">
         <PreTitle text={TESTIMONIALS_PRETITLE_TEXT} className="mx-auto" />
-        <Title text={TESTIMONIALS_TITLE_TEXT} size="medium" />
+        <Title text={TESTIMONIALS_TITLE_TEXT} size="medium" className="mt-7" />
       </div>
       {/** Slider */}
-      <TestimonialSlider />
+      <TestimonialSlider className="mt-10" />
     </div>
   );
 };

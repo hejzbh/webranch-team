@@ -22,7 +22,7 @@ interface OurWorkProps {
 
 const OurWork = ({ className = "" }: OurWorkProps) => {
   return (
-    <div className={`my-10 relative z-[1] py-20 ${className}`}>
+    <div className={`my-10 md:mt-20 relative z-[1] py-20 ${className}`}>
       {/** Background image */}
       <BackgroundImage
         imageSRC={"/images/reflection-bg.webp"}
