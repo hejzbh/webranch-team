@@ -38,7 +38,7 @@ const CreativeProcess = ({ className = "" }: CreativeProcessProps) => {
       </div>
 
       {/** Steps */}
-      <CreativeSteps className="mt-5 sm:mt-10" />
+      <CreativeSteps className="mt-2 xs:mt-5 sm:mt-10" />
     </div>
   );
 };
