@@ -13,7 +13,7 @@ const textSizeClasses = {
   small:
     "text-[22px] xxs:text-[24px] xs:text-[25px] md:text-[33px] xl:text-[37px] 2xl:text-[43px]",
   medium:
-    "text-[36px] xxs:text-[40px] xs:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px]",
+    "text-[30px] xxs:text-[33px] xs:text-[34px] md:text-[35px] xl:text-[47px] 2xl:text-[53px]",
   large:
     "text-[36px] xxs:text-[40px] xs:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px]",
 };
