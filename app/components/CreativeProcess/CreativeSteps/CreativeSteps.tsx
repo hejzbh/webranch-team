@@ -10,13 +10,13 @@ interface CreativeStepsProps {
 const CreativeSteps = ({ className = "" }: CreativeStepsProps) => {
   return (
     <div
-      className={`grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 items-end gap-2 sm:gap-7 ${className}`}
+      className={`grid grid-cols-1 ssm:grid-cols-2 lg:grid-cols-3 items-end gap-2 sm:gap-7 ${className}`}
     >
       {creativeProcessSteps?.map((step, idx, steps) => {
         return (
           <div
             className={`w-full relative pt-5 lg:pt-10 text-center  ${
-              idx === steps.length - 1 && "xs:col-span-3 lg:col-span-1"
+              idx === steps.length - 1 && "ssm:col-span-3 lg:col-span-1"
             }`}
             key={idx}
           >
