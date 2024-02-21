@@ -1,5 +1,6 @@
 import React from "react";
 // Next
+import Link from "next/link";
 import Image from "next/image";
 // Interface
 interface LogoProps {
@@ -8,14 +9,16 @@ interface LogoProps {
 
 const Logo = ({ className = "" }: LogoProps) => {
   return (
-    <Image
-      className={`w-full max-w-[120px] md:max-w-[150px] ${className}`}
-      src="/images/logo.webp"
-      loading="lazy"
-      width={150}
-      height={150}
-      alt={process.env.NEXT_PUBLIC_ALT_IMAGE as string}
-    />
+    <Link href="/" title="Home">
+      <Image
+        className={`w-full max-w-[120px] md:max-w-[150px] ${className}`}
+        src="/images/logo.webp"
+        loading="lazy"
+        width={150}
+        height={150}
+        alt={process.env.NEXT_PUBLIC_ALT_IMAGE as string}
+      />
+    </Link>
   );
 };
 
