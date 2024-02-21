@@ -42,7 +42,7 @@ const Title = ({
 
   return (
     <h2
-      style={{ lineHeight: 1.1, ...style }}
+      style={{ lineHeight: 1.2, ...style }}
       className={`${
         textSizeClasses[size]
       } font-semibold text-common-black  drop-shadow-lg ${

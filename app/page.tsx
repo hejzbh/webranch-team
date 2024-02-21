@@ -7,6 +7,8 @@ const CreativeProcess = dynamic(
 );
 const WhoWeAre = dynamic(() => import("@/app/components/WhoWeAre"));
 const OurServices = dynamic(() => import("@/app/components/OurServices"));
+const OurWork = dynamic(() => import("@/app/components/OurWork"));
+const Testimonials = dynamic(() => import("@/app/components/Testimonials"));
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <CreativeProcess />
       <WhoWeAre />
       <OurServices />
+      <OurWork />
+      <Testimonials />
     </>
   );
 }

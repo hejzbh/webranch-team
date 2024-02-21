@@ -23,7 +23,7 @@ const BackgroundImage = ({
         loading={loading}
         fill
         objectFit="fill"
-        className={`z-[-1] w-full h-full ${className}`}
+        className={`z-[-1] w-full h-full   ${className}`}
       />
       {children}
     </>

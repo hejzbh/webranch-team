@@ -24,3 +24,12 @@ export const OUR_SERVICES_PRETITLE_TEXT = "What we can do for you?";
 export const OUR_SERVICES_TITLE_TEXT = "Service we can help you with";
 export const OUR_SERVICES_DESCRIPTION_TEXT =
   "We'll ensure you always get the best Digital Service";
+
+// ⭐ OUR WORK
+export const OUR_WORK_PRETITLE_TEXT = "Check our Work";
+export const OUR_WORK_TITLE_TEXT = "Some of our recent case studies";
+export const OUR_WORK_BTN_TEXT = "All Case Studies";
+
+// ⭐ TESTIMOANIALS
+export const TESTIMONIALS_PRETITLE_TEXT = "Testimonial";
+export const TESTIMONIALS_TITLE_TEXT = "Trusted By Clients";
