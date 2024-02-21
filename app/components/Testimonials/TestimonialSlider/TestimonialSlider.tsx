@@ -23,6 +23,7 @@ const TestimonialSlider = ({ className = "" }: TestimonialSliderProps) => {
 
   const [sliderRef] = useKeenSlider({
     loop: true,
+
     renderMode: "performance",
     slides: {
       perView: slides,

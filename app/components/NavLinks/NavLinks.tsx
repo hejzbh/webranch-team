@@ -23,7 +23,27 @@ const NavLinks = ({ className = "", direction = "row" }: NavLinksProps) => {
             <Link
               title={link.name}
               href={link.href ?? "#"}
-              onClick={(e) => !link.href && e.preventDefault()} // Stop navigation if there is no href
+              onClick={(e) => {
+                if (!link.href) {
+                  e.preventDefault();
+                  return;
+                }
+
+                if (link.href.startsWith("#")) {
+                  const sectionID = link.href.slice(1);
+                  const section = document.getElementById(sectionID);
+
+                  if (!section) return;
+
+                  const sectionRect = section?.getBoundingClientRect();
+
+                  window.scroll({
+                    top: sectionRect.y + window.scrollY - 100,
+                    behavior: "smooth",
+                  });
+                  e.preventDefault();
+                }
+              }} // Stop navigation if there is no href
               className={`py-[40px] text-[15px] lg:text-[16px] text-text-body transition-all duration-300 ease-in-out uppercase font-semibold tracking-widest hover:text-nav-link-hover`}
             >
               {link.name}

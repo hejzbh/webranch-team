@@ -18,7 +18,7 @@ interface OurServicesProps {
 }
 const OurServices = ({ className = "" }: OurServicesProps) => {
   return (
-    <div className={`container mx-auto my-10 ${className}`}>
+    <div id="services" className={`container mx-auto my-10 ${className}`}>
       {/** Heading */}
       <div className="text-center">
         <PreTitle text={OUR_SERVICES_PRETITLE_TEXT} className="mx-auto" />
