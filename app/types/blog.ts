@@ -5,6 +5,6 @@ export interface Blog {
   thumbnail: string;
   content: string;
   category: BlogCategory;
-  createdAt: Date;
+  createdAt: string;
   id: string;
 }

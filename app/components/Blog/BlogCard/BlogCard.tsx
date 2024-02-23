@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 // Next
 import Link from "next/link";
@@ -7,6 +8,7 @@ import Image from "next/image";
 import { Blog } from "@/app/types/blog";
 // Icons
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useRouter } from "next/navigation";
 // Components
 const BlogCategory = dynamic(
   () => import("@/app/components/Blog/BlogCategory")
@@ -18,16 +20,19 @@ interface BlogCardProps {
   blog: Blog;
 }
 const BlogCard = ({ className = "", blog }: BlogCardProps) => {
+  const router = useRouter();
   {
     /** todo: remove Link, set onClick Pushs */
   }
   return (
     <div className={`group ${className}`}>
       {/** todo: When comes real blog data we should provide /blog/id in href */}
-      <Link
+      <div
         className="block relative h-full min-h-[22em] sm:min-h-[25em] z-[1] bg-white group overflow-hidden border-[15px] border-white rounded-[20px] shadow-md"
         title={blog.title}
-        href={`#`}
+        onClick={() => {
+          router.push(`/blog/${blog.id}`);
+        }}
       >
         <>
           {/** Thumbnail */}
@@ -64,7 +69,7 @@ const BlogCard = ({ className = "", blog }: BlogCardProps) => {
             </Link>
           </div>
         </>
-      </Link>
+      </div>
     </div>
   );
 };
