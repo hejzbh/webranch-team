@@ -17,7 +17,9 @@ const BlogListing = ({ className = "", blogList }: BlogListingProps) => {
       className={`grid grid-cols-1 lg:grid-cols-2 gap-10 justify-center ${className}`}
     >
       {blogList?.map((blog) => (
-        <BlogCard blog={blog} key={blog.id} />
+        <li key={blog.id}>
+          <BlogCard blog={blog} key={blog.id} />
+        </li>
       ))}
     </ul>
   );
