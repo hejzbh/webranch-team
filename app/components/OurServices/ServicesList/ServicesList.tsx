@@ -25,9 +25,9 @@ const ServicesList = ({ className = "" }: ServicesListProps) => {
             className="mx-auto transition-all duration-300 ease-in-out group-hover:translate-y-[-15%]"
           />
           {/** Name */}
-          <h4 className="text-common-black my-3 font-semibold text-[19px] sm:text-[20px] md:text-[21px] lg:text-[22px]">
+          <h3 className="text-common-black my-3 font-semibold text-[19px] sm:text-[20px] md:text-[21px] lg:text-[22px]">
             {service.name}
-          </h4>
+          </h3>
           {/** Description */}
           <p className="text-common-black-2  text-[15px] sm:text-[16px] md:text-[17px]">
             {service.description}
