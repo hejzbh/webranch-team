@@ -22,7 +22,7 @@ const CreativeSteps = ({ className = "" }: CreativeStepsProps) => {
           >
             {/** Name */}
             <h3
-              className={`creative-step-text z-[1] cursor-pointer text-[40px] xs:text-[50px] sm:text-[85px] xl:text-[100px] 2xl:text-[120px] font-semibold text-transparent transition-all duration-300 ease-in-out group`}
+              className={`creative-step-text unselectable z-[1] cursor-pointer text-[40px] xs:text-[50px] sm:text-[85px] xl:text-[100px] 2xl:text-[120px] font-semibold text-transparent transition-all duration-300 ease-in-out group`}
             >
               {/** Image (display on hover) */}
               {step.imageSRC && (
