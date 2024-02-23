@@ -9,6 +9,7 @@ const WhoWeAre = dynamic(() => import("@/app/components/WhoWeAre"));
 const OurServices = dynamic(() => import("@/app/components/OurServices"));
 const OurWork = dynamic(() => import("@/app/components/OurWork"));
 const Testimonials = dynamic(() => import("@/app/components/Testimonials"));
+const Blog = dynamic(() => import("@/app/components/Blog"));
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <OurServices />
       <OurWork />
       <Testimonials />
+      <Blog />
     </>
   );
 }

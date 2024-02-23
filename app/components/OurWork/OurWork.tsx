@@ -24,10 +24,7 @@ const OurWork = ({ className = "" }: OurWorkProps) => {
   return (
     <div className={`my-10 md:mt-20 relative z-[1] py-20 ${className}`}>
       {/** Background image */}
-      <BackgroundImage
-        imageSRC={"/images/reflection-bg.webp"}
-        loading="eager"
-      />
+      <BackgroundImage imageSRC={"/images/reflection-bg.webp"} loading="lazy" />
       {/** Content inner */}
       <div className="container mx-auto text-center">
         {/** Heading */}

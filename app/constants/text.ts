@@ -33,3 +33,7 @@ export const OUR_WORK_BTN_TEXT = "All Case Studies";
 // ⭐ TESTIMOANIALS
 export const TESTIMONIALS_PRETITLE_TEXT = "Testimonial";
 export const TESTIMONIALS_TITLE_TEXT = "Trusted By Clients";
+
+// ⭐ HOME BLOG
+export const HOME_BLOG_PRETITLE_TEXT = "Our Blog Article";
+export const HOME_BLOG_TITLE_TEXT = "Read our Latest stories";
