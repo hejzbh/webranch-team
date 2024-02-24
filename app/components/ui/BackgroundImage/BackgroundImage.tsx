@@ -19,6 +19,7 @@ const BackgroundImage = ({
     <>
       <Image
         src={imageSRC}
+        style={{ aspectRatio: "16/9" }}
         alt={process.env.NEXT_PUBLIC_ALT_IMAGE as string}
         loading={loading}
         fill
