@@ -36,7 +36,7 @@ const Blog = ({ className = "" }: BlogProps) => {
           className="my-7 lg:max-w-[60%] mx-auto"
         />
         {/** Blog Listing */}
-        <BlogListing blogList={blogList} className="my-20" />
+        <BlogListing blogList={blogList} className="mt-20" />
       </div>
     </section>
   );

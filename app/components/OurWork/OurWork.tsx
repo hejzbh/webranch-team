@@ -24,7 +24,7 @@ interface OurWorkProps {
 const OurWork = ({ className = "" }: OurWorkProps) => {
   return (
     <section
-      className={`relative z-[1] py-20 ${sectionSpacingClass} ${className}`}
+      className={`relative z-[1] py-20 pb-5 ${sectionSpacingClass} ${className}`}
     >
       {/** Background image */}
       <BackgroundImage imageSRC={"/images/reflection-bg.webp"} loading="lazy" />

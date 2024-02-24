@@ -1,1 +1,1 @@
-export const sectionSpacingClass = "my-10";
+export const sectionSpacingClass = "my-[8rem]";

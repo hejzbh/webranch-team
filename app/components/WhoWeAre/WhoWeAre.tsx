@@ -8,6 +8,7 @@ import {
   WHO_WE_ARE_PRETITLE_TEXT,
   WHO_WE_ARE_TITLE_TEXT,
 } from "@/app/constants/text";
+import { sectionSpacingClass } from "@/app/constants/classes";
 // Components
 const PreTitle = dynamic(() => import("@/app/components/ui/PreTitle"));
 const Title = dynamic(() => import("@/app/components/ui/Title"));
@@ -22,7 +23,7 @@ interface WhoWeAreProps {
 const WhoWeAre = ({ className = "" }: WhoWeAreProps) => {
   return (
     <div
-      className={`container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 items-center ${className}`}
+      className={`container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 items-center ${sectionSpacingClass} ${className}`}
     >
       {/** Image */}
       <div className="order-2 lg:order-1">
