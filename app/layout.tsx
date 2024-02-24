@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 // Components
 const Header = dynamic(() => import("@/app/components/Header"));
 const ScrollToTop = dynamic(() => import("@/app/components/ScrollToTop"));
+const Footer = dynamic(() => import("@/app/components/Footer"));
 // Font
 const poppinsFont = Poppins({
   subsets: ["latin", "latin-ext"],
@@ -28,6 +29,7 @@ export default function RootLayout({
         <Header />
         {children}
         <ScrollToTop className="!fixed bottom-10 right-10 z-[20]" />
+        <Footer className="mt-20" />
       </body>
     </html>
   );

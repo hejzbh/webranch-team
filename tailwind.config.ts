@@ -30,6 +30,8 @@ const config: Config = {
       gridTemplateColumns: {
         "services-list-xl": "repeat(auto-fit, minmax(10em, 22em))",
         "services-list-sm": "repeat(auto-fit, minmax(10em, 18em))",
+        "footer-links-lg": "repeat(auto-fit, minmax(10em, 15em))",
+        "footer-links-xl": "repeat(auto-fit, minmax(10em, 18em))",
       },
       colors: {
         "common-black-2": "#52525C",
