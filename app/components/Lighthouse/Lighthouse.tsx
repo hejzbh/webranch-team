@@ -24,7 +24,7 @@ const Lighthouse = ({ className = "" }: LighthouseProps) => {
       {/** Heading */}
       <PreTitle text={LIGHTHOUSE_PRETITLE_TEXT} className="mx-auto" />
       {/** Content */}{" "}
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-5 mt-10 lg:mt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-5 mt-10 lg:mt-[3rem]">
         {/** Image */}
         <Image
           loading="lazy"
