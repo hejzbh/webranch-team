@@ -11,7 +11,7 @@ interface TitleProps {
 
 const textSizeClasses = {
   small:
-    "text-[22px] xxs:text-[24px] xs:text-[25px] md:text-[33px] xl:text-[37px] 2xl:text-[43px]",
+    "text-[30px] xxs:text-[33px] xs:text-[34px] md:text-[33px] xl:text-[37px] 2xl:text-[43px]",
   medium:
     "text-[30px] xxs:text-[33px] xs:text-[34px] md:text-[35px] xl:text-[47px] 2xl:text-[53px]",
   large:

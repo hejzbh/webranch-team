@@ -41,6 +41,9 @@ const config: Config = {
         upwork: "#73bb44",
         "common-yellow": "#EED064",
         "nav-link-hover": "#6864ED",
+        seo: "#EE880B",
+        performance: "#FD3736",
+        best: "#35BAFD",
       },
       container: {
         padding: {

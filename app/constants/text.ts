@@ -37,3 +37,9 @@ export const TESTIMONIALS_TITLE_TEXT = "Trusted By Clients";
 // ⭐ HOME BLOG
 export const HOME_BLOG_PRETITLE_TEXT = "Our Blog Article";
 export const HOME_BLOG_TITLE_TEXT = "Read our Latest stories";
+
+// ⭐ LIGHTHOUSE
+export const LIGHTHOUSE_PRETITLE_TEXT = "What Google say about us";
+export const LIGHTHOUSE_TITLE_TEXT = "We care about what others don't";
+export const LIGHTHOUSE_DESCRIPTION_TEXT =
+  "Grursus mal suada faci lisis Lorem ipsum dolarorit ametion the at dummy consectetur elitesti at bulum nec odio aea.";
