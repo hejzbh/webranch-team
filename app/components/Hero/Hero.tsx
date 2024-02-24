@@ -24,7 +24,7 @@ interface HeroProps {
 
 const Hero = ({ className = "" }: HeroProps) => {
   return (
-    <div id="hero" className={`relative z-[1] ${className}`}>
+    <div id="first-section" className={`relative z-[1] ${className}`}>
       {/** Background image */}
       <BackgroundImage
         imageSRC={"/images/reflection-bg.webp"}

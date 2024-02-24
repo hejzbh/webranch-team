@@ -12,7 +12,7 @@ interface ScrollToTopProps {
 }
 const ScrollToTop = ({ className = "" }: ScrollToTopProps) => {
   const [displayBTN, setDisplayBTN] = useState<boolean>(false);
-  const heroRect: any = useMemo(() => ({ current: null }), []);
+  const firstSectionRect: any = useMemo(() => ({ current: null }), []);
 
   useEffect(() => {
     // 1) Prevent
@@ -25,14 +25,14 @@ const ScrollToTop = ({ className = "" }: ScrollToTopProps) => {
 
   function onPageScroll() {
     // 1)
-    if (!heroRect.current) {
-      heroRect.current = document
-        ?.getElementById("hero")
+    if (!firstSectionRect.current) {
+      firstSectionRect.current = document
+        ?.getElementById("first-section")
         ?.getBoundingClientRect();
     }
 
     // 2)
-    setDisplayBTN(window.scrollY > heroRect.current.height);
+    setDisplayBTN(window.scrollY > firstSectionRect.current.height);
   }
 
   if (!displayBTN) return null;
