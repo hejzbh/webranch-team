@@ -33,7 +33,7 @@ const CreativeProcess = ({ className = "" }: CreativeProcessProps) => {
           alt={process.env.NEXT_PUBLIC_ALT_IMAGE as string}
           width={200}
           height={180}
-          className="w-full max-w-[100px] sm:max-w-[130px] md:max-w-[200px]"
+          className="w-full max-w-[70px] xs:max-w-[100px] sm:max-w-[130px] md:max-w-[200px]"
         />
       </div>
 

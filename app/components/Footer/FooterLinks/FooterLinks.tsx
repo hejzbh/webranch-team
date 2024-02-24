@@ -45,11 +45,11 @@ const FooterLinks = ({ className = "" }: FooterLinksProps) => {
               {listTitle}
             </h3>
             {/** Links */}
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               {links?.map((link, idx) => (
                 <li key={idx}>
                   <Link
-                    className="text-common-black/80 flex items-center font-[500] transition-all duration-300 ease-in-out text-[16px] hover:text-nav-link-hover"
+                    className="text-common-black/80 flex items-center font-[500] transition-all duration-300 ease-in-out text-[16px] hover:text-nav-link-hover hover:md:translate-x-1 p-1"
                     href={link.href}
                     title={link.name}
                   >
