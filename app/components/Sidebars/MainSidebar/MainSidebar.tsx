@@ -6,6 +6,7 @@ const CompanyShortInfo = dynamic(
   () => import("@/app/components/CompanyShortInfo")
 );
 const GetInTouch = dynamic(() => import("@/app/components/GetInTouch"));
+const SocialMedia = dynamic(() => import("@/app/components/SocialMedia"));
 // Interface
 interface MainSidebarProps {
   className?: string;
@@ -19,6 +20,7 @@ const MainSidebar = ({ className = "" }: MainSidebarProps) => {
       <div className="py-4 border-y-2 border-white/30 my-10">
         <GetInTouch />
       </div>
+      <SocialMedia className="mt-10" />
     </div>
   );
 };
