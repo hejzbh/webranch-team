@@ -41,7 +41,7 @@ const SidebarLayout = ({
       <div
         className={`${
           showChildren ? "translate-x-0" : "translate-x-[150%]"
-        } transition-all duration-500 absolute top-0 right-0  max-w-[80%] ssm:max-w-[50%] md:max-w-[40%] lg:max-w-[30%] xl:max-w-[25%] h-full z-[2] ease-in-out delay-100`}
+        } transition-all duration-500 absolute top-0 right-0  max-w-[80%] ssm:max-w-[50%] md:max-w-[40%] lg:max-w-[30%] xl:max-w-[25%] h-full z-[2] ease-in-out`}
       >
         {children && children}
       </div>
