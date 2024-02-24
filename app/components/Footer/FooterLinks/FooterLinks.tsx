@@ -12,7 +12,9 @@ import {
   MdOutlineLocationOn,
 } from "react-icons/md";
 // Components
-const Logo = dynamic(() => import("@/app/components/ui/Logo"));
+const CompanyShortInfo = dynamic(
+  () => import("@/app/components/CompanyShortInfo")
+);
 // Interface
 interface FooterLinksProps {
   className?: string;
@@ -24,7 +26,7 @@ const FooterLinks = ({ className = "" }: FooterLinksProps) => {
     >
       {/** Agency Details */}
       <li className="flex flex-col justify-center items-center">
-        <Logo className="min-w-[150px]" />
+        <CompanyShortInfo />
         <Link
           className="text-[17px] font-[500] transition-all duration-300 ease-in-out text-nav-link-hover flex items-center"
           title="Contact us via email"

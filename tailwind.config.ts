@@ -44,6 +44,7 @@ const config: Config = {
         seo: "#EE880B",
         performance: "#FD3736",
         best: "#35BAFD",
+        sidebar: "#151718",
       },
       container: {
         padding: {

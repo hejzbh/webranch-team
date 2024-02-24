@@ -10,6 +10,7 @@ const SidebarLayout = ({
   className = "",
   isOpen = false,
   onClose = () => {},
+  children,
 }: SidebarLayoutProps) => {
   const blackOverlayRef = useRef<RefObject<HTMLDivElement> | any>();
   const [showChildren, setShowChildren] = useState<boolean>(false);
@@ -40,8 +41,10 @@ const SidebarLayout = ({
       <div
         className={`${
           showChildren ? "translate-x-0" : "translate-x-[150%]"
-        } transition-all duration-500 bg-slate-400 p-20 absolute top-0 right-0 h-full z-[2] ease-in-out delay-100`}
-      ></div>
+        } transition-all duration-500 absolute top-0 right-0  max-w-[80%] ssm:max-w-[50%] md:max-w-[40%] lg:max-w-[30%] xl:max-w-[25%] h-full z-[2] ease-in-out delay-100`}
+      >
+        {children && children}
+      </div>
     </div>
   );
 };

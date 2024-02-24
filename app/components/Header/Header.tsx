@@ -9,6 +9,9 @@ const Logo = dynamic(() => import("@/app/components/ui/Logo"));
 const Button = dynamic(() => import("@/app/components/ui/Button"));
 const NavLinks = dynamic(() => import("@/app/components/NavLinks"));
 const SidebarLayout = dynamic(() => import("@/app/components/Sidebars"));
+const MainSidebar = dynamic(
+  () => import("@/app/components/Sidebars/MainSidebar")
+);
 // Interface
 interface HeaderProps {
   className?: string;
@@ -59,7 +62,7 @@ const Header = ({ className = "" }: HeaderProps) => {
       </header>
       {/** Sidebar */}
       <SidebarLayout isOpen={openSidebar} onClose={() => setOpenSidebar(false)}>
-        <p></p>
+        <MainSidebar />
       </SidebarLayout>
     </>
   );
