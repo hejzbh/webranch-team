@@ -18,7 +18,7 @@ interface CreativeProcessProps {
 
 const CreativeProcess = ({ className = "" }: CreativeProcessProps) => {
   return (
-    <div className={`container mx-auto py-10  ${className}`}>
+    <div className={`container mx-auto ${className}`}>
       {/** Heading */}
       <div className="flex justify-between items-end flex-col md:flex-row md:items-start">
         {/** PreTitle & Title */}

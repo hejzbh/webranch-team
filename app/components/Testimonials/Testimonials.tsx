@@ -6,6 +6,7 @@ import {
   TESTIMONIALS_TITLE_TEXT,
   TESTIMONIALS_PRETITLE_TEXT,
 } from "@/app/constants/text";
+import { sectionSpacingClass } from "@/app/constants/classes";
 // Components
 const PreTitle = dynamic(() => import("@/app/components/ui/PreTitle"));
 const Title = dynamic(() => import("@/app/components/ui/Title"));
@@ -16,7 +17,7 @@ interface TestimonialsProps {
 }
 const Testimonials = ({ className = "" }: TestimonialsProps) => {
   return (
-    <div className={`my-10 ${className}`}>
+    <section className={`${sectionSpacingClass} ${className}`}>
       {/** Heading */}
       <div className="container mx-auto text-center">
         <PreTitle text={TESTIMONIALS_PRETITLE_TEXT} className="mx-auto" />
@@ -24,7 +25,7 @@ const Testimonials = ({ className = "" }: TestimonialsProps) => {
       </div>
       {/** Slider */}
       <TestimonialSlider className="mt-10" />
-    </div>
+    </section>
   );
 };
 

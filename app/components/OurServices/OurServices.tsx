@@ -7,6 +7,7 @@ import {
   OUR_SERVICES_PRETITLE_TEXT,
   OUR_SERVICES_TITLE_TEXT,
 } from "@/app/constants/text";
+import { sectionSpacingClass } from "@/app/constants/classes";
 // Components
 const PreTitle = dynamic(() => import("@/app/components/ui/PreTitle"));
 const Title = dynamic(() => import("@/app/components/ui/Title"));
@@ -18,7 +19,10 @@ interface OurServicesProps {
 }
 const OurServices = ({ className = "" }: OurServicesProps) => {
   return (
-    <div id="services" className={`container mx-auto my-10 ${className}`}>
+    <section
+      id="services"
+      className={`container mx-auto ${sectionSpacingClass} ${className}`}
+    >
       {/** Heading */}
       <div className="text-center">
         <PreTitle text={OUR_SERVICES_PRETITLE_TEXT} className="mx-auto" />
@@ -27,7 +31,7 @@ const OurServices = ({ className = "" }: OurServicesProps) => {
       </div>
       {/** Services List */}
       <ServicesList className="mt-[4rem] md:mt-[6rem]" />
-    </div>
+    </section>
   );
 };
 

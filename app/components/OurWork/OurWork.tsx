@@ -7,6 +7,7 @@ import {
   OUR_WORK_TITLE_TEXT,
   OUR_WORK_BTN_TEXT,
 } from "@/app/constants/text";
+import { sectionSpacingClass } from "@/app/constants/classes";
 // Components
 const BackgroundImage = dynamic(
   () => import("@/app/components/ui/BackgroundImage")
@@ -22,7 +23,9 @@ interface OurWorkProps {
 
 const OurWork = ({ className = "" }: OurWorkProps) => {
   return (
-    <div className={`my-10 md:mt-20 relative z-[1] py-20 ${className}`}>
+    <section
+      className={`relative z-[1] py-20 ${sectionSpacingClass} ${className}`}
+    >
       {/** Background image */}
       <BackgroundImage imageSRC={"/images/reflection-bg.webp"} loading="lazy" />
       {/** Content inner */}
@@ -41,7 +44,7 @@ const OurWork = ({ className = "" }: OurWorkProps) => {
         {/** BTN */}
         <Button className="mx-auto" uppercase text={OUR_WORK_BTN_TEXT} />
       </div>
-    </div>
+    </section>
   );
 };
 

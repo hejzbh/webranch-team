@@ -7,6 +7,7 @@ import {
   HOME_BLOG_PRETITLE_TEXT,
 } from "@/app/constants/text";
 import { blogList } from "@/app/constants/blogList";
+import { sectionSpacingClass } from "@/app/constants/classes";
 // Components
 const BackgroundImage = dynamic(
   () => import("@/app/components/ui/BackgroundImage")
@@ -21,7 +22,9 @@ interface BlogProps {
 
 const Blog = ({ className = "" }: BlogProps) => {
   return (
-    <div className={`my-10 md:mt-20 relative z-[1] py-20 ${className}`}>
+    <section
+      className={` relative z-[1] py-20 ${sectionSpacingClass} ${className}`}
+    >
       {/** Background Image */}
       <BackgroundImage imageSRC={"/images/reflection-bg.webp"} loading="lazy" />
       {/** Content inner */}
@@ -35,7 +38,7 @@ const Blog = ({ className = "" }: BlogProps) => {
         {/** Blog Listing */}
         <BlogListing blogList={blogList} className="my-20" />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -22,7 +22,7 @@ interface WhoWeAreProps {
 const WhoWeAre = ({ className = "" }: WhoWeAreProps) => {
   return (
     <div
-      className={`container mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-5 items-center ${className}`}
+      className={`container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 items-center ${className}`}
     >
       {/** Image */}
       <div className="order-2 lg:order-1">

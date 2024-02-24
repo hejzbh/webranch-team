@@ -9,7 +9,7 @@ import {
   LIGHTHOUSE_DESCRIPTION_TEXT,
 } from "@/app/constants/text";
 import { lighthouseList } from "@/app/constants/lighthouse";
-
+import { sectionSpacingClass } from "@/app/constants/classes";
 // Components
 const PreTitle = dynamic(() => import("@/app/components/ui/PreTitle"));
 const Title = dynamic(() => import("@/app/components/ui/Title"));
@@ -20,7 +20,9 @@ interface LighthouseProps {
 }
 const Lighthouse = ({ className = "" }: LighthouseProps) => {
   return (
-    <div className={`container mx-auto my-10 ${className}`}>
+    <section
+      className={`container mx-auto ${sectionSpacingClass} ${className}`}
+    >
       {/** Heading */}
       <PreTitle text={LIGHTHOUSE_PRETITLE_TEXT} className="mx-auto" />
       {/** Content */}{" "}
@@ -66,7 +68,7 @@ const Lighthouse = ({ className = "" }: LighthouseProps) => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
