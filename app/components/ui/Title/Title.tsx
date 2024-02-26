@@ -18,7 +18,7 @@ const textSizeClasses = {
   large:
     "text-[38px] xxs:text-[42px] xs:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px]",
   largeWithSmallMobile:
-    "text-[30px] xxs:text-[33px] xs:text-[34px] md:text-[60px] xl:text-[70px] 2xl:text-[80px]",
+    "text-[32px] xxs:text-[35px] xs:text-[37px] md:text-[60px] xl:text-[70px] 2xl:text-[80px]",
 };
 
 const Title = ({
