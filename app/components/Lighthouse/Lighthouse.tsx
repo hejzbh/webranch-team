@@ -45,7 +45,7 @@ const Lighthouse = ({ className = "" }: LighthouseProps) => {
             className="my-3 mb-6"
           />
           {/** Lighthouse stats */}
-          <ul className="space-y-5 text-left sm:max-w-[80%] mx-auto lg:max-w-full lg:mx-[unset]">
+          <ul className="space-y-5 text-left mt-5 lg:mt-0 sm:max-w-[80%] mx-auto lg:max-w-full lg:mx-[unset]">
             {lighthouseList?.map((item, idx) => {
               const Icon = item?.Icon;
 
