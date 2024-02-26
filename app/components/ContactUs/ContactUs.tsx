@@ -10,6 +10,7 @@ const BackgroundImage = dynamic(
 );
 const Title = dynamic(() => import("@/app/components/ui/Title"));
 const GetInTouch = dynamic(() => import("@/app/components/GetInTouch"));
+const ContactForm = dynamic(() => import("@/app/components/Forms/ContactForm"));
 //  Interface
 interface ContactUsProps {
   className?: string;
@@ -17,31 +18,35 @@ interface ContactUsProps {
 const ContactUs = ({ className = "" }: ContactUsProps) => {
   return (
     <section
-      className={`relative z-[-1]  py-20  ${sectionSpacingClass} ${className}`}
+      className={`relative z-[1]  py-20 pb-[13rem]  ${sectionSpacingClass} ${className}`}
     >
       {/** Background image */}
       <BackgroundImage
-        imageSRC={"/images/reflection-bg.webp"}
+        imageSRC={"/images/reflection-bg-2.webp"}
         loading="eager"
+        className="!object-contain"
       />
       {/** Content box */}
       <div
         style={{
           boxShadow: "rgba(17, 12, 46, 0.15) 0 48px 100px 0",
         }}
-        className="rounded-[35px] relative z-[1] p-10 md:p-20 pb-[60em] container mx-auto grid grid-cols-2 gap-10"
+        className="rounded-[35px] relative z-[5] p-10 md:p-20  container mx-auto grid lg:grid-cols-2 gap-10"
       >
         {/** Text */}
-        <div>
+        <div className="flex flex-col justify-center items-center md:justify-start md:items-start">
           <Title text="Contact Us" />
           <GetInTouch
             removeTitle
             className="mt-10"
             valueClassName="!text-common-purple"
-            labelClassName="text-black"
+            labelClassName="!text-black"
           />
         </div>
         {/** Form */}
+        <div className="mt-10 lg:mt-0">
+          <ContactForm />
+        </div>
       </div>
       {/** Image */}
       <Image

@@ -7,6 +7,7 @@ import { FormInput } from "@/app/types/form";
 // Components
 const Title = dynamic(() => import("@/app/components/ui/Title"));
 const Description = dynamic(() => import("@/app/components/ui/Description"));
+const Button = dynamic(() => import("@/app/components/ui/Button"));
 // Components
 
 // Interface
@@ -34,7 +35,7 @@ const Form = ({
   formClassName = "",
   submitTitle = "Submit",
   labelClassName = "",
-  disabledTitle,
+  disabledTitle = "Please fill in inputs",
   onSubmit = () => {},
   children,
   inputs,
@@ -60,7 +61,9 @@ const Form = ({
   };
 
   return (
-    <div className={`${className} flex flex-col items-center justify-center`}>
+    <div
+      className={`${className} flex flex-col  w-full items-center justify-center`}
+    >
       {/**  Title ? */}
       {title && <Title text={title} size="small" />}
       {/** Description ? */}
@@ -68,7 +71,7 @@ const Form = ({
 
       {/** FORM */}
       <form
-        className={`mt-10 ${formClassName}`}
+        className={`mt-10 w-full ${formClassName}`}
         onSubmit={(e) => {
           e.preventDefault();
           if (!isDisabled) {
@@ -76,7 +79,7 @@ const Form = ({
           }
         }}
       >
-        <div className={`grid grid-cols-1 gap-7 ${formClassName}`}>
+        <div className={`grid grid-cols-1 gap-7  ${formClassName}`}>
           {inputs?.map((input, i) => {
             const Icon = input.Icon;
             switch (input.type) {
@@ -88,7 +91,7 @@ const Form = ({
                   >
                     {input.label && (
                       <label
-                        className={`text-formGray absolute left-3 top-[-4px] ml-3 bg-white px-1 text-[14px] sm:text-[15px] md:text-[16px] ${labelClassName}`}
+                        className={`text-formGray px-1 text-common-black font-[500] text-[14px] sm:text-[15px] md:text-[16px] ${labelClassName}`}
                         htmlFor={input.name}
                       >
                         {input.label}
@@ -103,9 +106,7 @@ const Form = ({
                       placeholder={`${input.placeholder || ""} ${
                         input.required ? " *" : ""
                       }`}
-                      className={`rounded-[2.5rem] border-[2px] border-grayBorder text-[14px] text-text  shadow-md transition-all duration-300 ease-in-out hover:border-main/40 focus:border-main/60 md:text-[16px] ${
-                        input.label ? "py-4 pl-[3rem] pr-3" : "px-3 py-2"
-                      }`}
+                      className={`rounded-3xl shadow-md w-full bg-white border-none outline-none p-3`}
                     />
                     {Icon && (
                       <Icon className="absolute left-5 top-[50%] translate-y-[-70%] text-[18px] text-text transition-all duration-300 ease-in-out group-hover:text-main/80 sm:text-[19x] md:text-[20px]" />
@@ -117,7 +118,7 @@ const Form = ({
                   <div className="relative flex flex-col space-y-2" key={i}>
                     {input.label && (
                       <label
-                        className={`text-formGray absolute left-3 top-[-4px] ml-3 bg-white px-1 text-[14px] sm:text-[15px] md:text-[16px] ${labelClassName}`}
+                        className={`text-formGray px-1 text-common-black font-[500] text-[14px] sm:text-[15px] md:text-[16px] ${labelClassName}`}
                         htmlFor={input.name}
                       >
                         {input.label}
@@ -130,7 +131,7 @@ const Form = ({
                       rows={4}
                       cols={6}
                       placeholder={input.placeholder}
-                      className="resize-none rounded-[2.5rem] border-[2px] border-grayBorder px-3 py-2 text-text shadow-md !outline-none transition-all duration-300 ease-in-out hover:border-main/40 focus:border-main/60"
+                      className={`rounded-3xl shadow-md w-full bg-white border-none outline-none p-3 resize-none`}
                     ></textarea>
                   </div>
                 );
@@ -140,15 +141,13 @@ const Form = ({
           })}
         </div>
         {/** Submit BTN */}
-        <div className="w-full text-right">
-          <button
+        <div>
+          <Button
             type="submit"
-            title={isDisabled ? disabledTitle : submitTitle}
+            text={isDisabled ? disabledTitle : submitTitle}
             disabled={isDisabled}
-            className={`mt-5 w-full rounded-[4rem] border-2 border-main bg-main p-2 text-center text-[15px] text-white shadow-sm drop-shadow-sm transition-all duration-300 ease-in-out hover:bg-transparent hover:text-main hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50 sm:text-[16px] md:p-3 md:text-[17px] ${submitBTNclassname}`}
-          >
-            {submitTitle}
-          </button>
+            className={`disabled:opacity-50 mt-10 ${submitBTNclassname}`}
+          />
         </div>
       </form>
       {children && children}

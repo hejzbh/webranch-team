@@ -10,7 +10,9 @@ interface ButtonProps {
   href?: string;
   children?: React.ReactNode;
   titleProp?: string;
+  disabled?: boolean;
   onClick?: () => void;
+  type?: "button" | "submit";
   reversedBG?: boolean;
 }
 
@@ -22,6 +24,8 @@ const Button = ({
   children,
   titleProp = text,
   reversedBG,
+  disabled = false,
+  type = "button",
   onClick = () => {},
 }: ButtonProps) => {
   const router: any = useRouter();
@@ -38,6 +42,8 @@ const Button = ({
 
   return (
     <button
+      type={type}
+      disabled={disabled}
       style={{ letterSpacing: ".7px" }}
       className={`text-white  transition-all duration-300 ease-in-out ${
         reversedBG
