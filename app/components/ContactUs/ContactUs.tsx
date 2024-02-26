@@ -22,7 +22,7 @@ const ContactUs = ({ className = "" }: ContactUsProps) => {
     >
       {/** Background image */}
       <BackgroundImage
-        imageSRC={"/images/reflection-bg-2.webp"}
+        imageSRC={"/images/reflection-bg.webp"}
         loading="eager"
         className="!object-contain"
       />
