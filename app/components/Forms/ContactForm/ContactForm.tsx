@@ -10,7 +10,7 @@ const ContactForm = () => {
     <div className="w-full">
       {/** Title */}
       <h3 className="font-[500] text-[23px] text-center md:text-left">
-        Let's have small talk
+        {`Let's have small talk`}
       </h3>
       {/* Form */}
       <Form
