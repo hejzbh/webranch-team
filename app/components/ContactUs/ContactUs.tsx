@@ -24,7 +24,6 @@ const ContactUs = ({ className = "" }: ContactUsProps) => {
       <BackgroundImage
         imageSRC={"/images/reflection-bg.webp"}
         loading="eager"
-        className="!object-contain"
       />
       {/** Content box */}
       <div
@@ -35,7 +34,7 @@ const ContactUs = ({ className = "" }: ContactUsProps) => {
       >
         {/** Text */}
         <div className="flex flex-col justify-center items-center md:justify-start md:items-start">
-          <Title text="Contact Us" />
+          <Title text="Contact Us" size="small" />
           <GetInTouch
             removeTitle
             className="mt-10"
