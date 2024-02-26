@@ -21,7 +21,7 @@ const ScrollToTop = ({ className = "" }: ScrollToTopProps) => {
     window.addEventListener("scroll", onPageScroll);
     // 3) Remove event listener through useEffect cleanup function
     return () => window.removeEventListener("scroll", onPageScroll);
-  }, []);
+  }, []); // eslint-disable-line
 
   function onPageScroll() {
     // 1)
