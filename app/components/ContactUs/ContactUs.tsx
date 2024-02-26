@@ -22,7 +22,8 @@ const ContactUs = ({ className = "" }: ContactUsProps) => {
     >
       {/** Background image */}
       <BackgroundImage
-        imageSRC={"/images/reflection-bg.webp"}
+        imageSRC={"/images/reflection-bg-3.svg"}
+        className="!object-contain"
         loading="eager"
       />
       {/** Content box */}
