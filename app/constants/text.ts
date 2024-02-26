@@ -43,3 +43,29 @@ export const LIGHTHOUSE_PRETITLE_TEXT = "What Google say about us";
 export const LIGHTHOUSE_TITLE_TEXT = "We care about what others don't";
 export const LIGHTHOUSE_DESCRIPTION_TEXT =
   "Grursus mal suada faci lisis Lorem ipsum dolarorit ametion the at dummy consectetur elitesti at bulum nec odio aea.";
+
+// ⭐ ABOUT US
+export const ABOUT_US_TITLE_TEXT = "About Us";
+//
+export const ABOUT_US_FIRST_TITLE_TEXT =
+  "Introduction to the team of young and ambitious experts";
+export const ABOUT_US_FIRST_DESCRIPTION_TEXT = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nam sunt provident rem reprehenderit tempore, atque modi ipsa maiores facere
+nisi voluptatibus! (space) Illum amet distinctio nobis itaque! Impedit atque
+veritatis quo quasi? Fuga distinctio temporibus magnam eveniet
+necessitatibus quas quibusdam ab natus? Ipsa asperiores odit velit
+quasi rerum enim aperiam doloremque beatae numquam a quas, fuga quidem
+facere corrupti illo blanditiis dignissimos. Voluptates natus, officia
+nemo eligendi, quisquam officiis quas vero vel explicabo, enim nam.
+Esse autem totam sunt nesciunt. (space)
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti nihil nostrum? Ipsam quaerat impedit distinctio reprehenderit facilis nemo, similique quas praesentium id quod commodi quisquam temporibus pariatur molestias corrupti!`;
+//
+export const ABOUT_US_SECOND_TITLE_TEXT = "Why work with us ?";
+export const ABOUT_US_SECOND_DESCRIPTION_TEXT = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nam sunt provident rem reprehenderit tempore, atque modi ipsa maiores facere
+nisi voluptatibus! (space) Illum amet distinctio nobis itaque! Impedit atque
+veritatis quo quasi? Fuga distinctio temporibus magnam eveniet
+necessitatibus quas quibusdam ab natus?`;
+
+// ⭐ TEAM MEMBERS
+
+export const TEAM_MEMBERS_PRETITLE_TEXT = "Team Members";
+export const TEAM_MEMBERS_TITLE_TEXT = "Meet with Us";

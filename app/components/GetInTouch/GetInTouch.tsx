@@ -14,13 +14,23 @@ import {
 // Interface
 interface GetInTouchProps {
   className?: string;
+  labelClassName?: string;
+  valueClassName?: string;
+  removeTitle?: boolean;
 }
-const GetInTouch = ({ className = "" }: GetInTouchProps) => {
+const GetInTouch = ({
+  className = "",
+  labelClassName = "",
+  valueClassName = "",
+  removeTitle,
+}: GetInTouchProps) => {
   return (
     <div className={`${className}`}>
-      <h3 className="text-white text-md mb-4 font-[500] text-[20px] xs:text-[21px] sm:text-[22px] lg:text-[23px]">
-        Get In Touch
-      </h3>
+      {!removeTitle && (
+        <h3 className="text-white text-md mb-4 font-[500] text-[20px] xs:text-[21px] sm:text-[22px] lg:text-[23px]">
+          Get In Touch
+        </h3>
+      )}
       <ul className="space-y-5">
         {/** Mail */}
         <li>
@@ -34,8 +44,14 @@ const GetInTouch = ({ className = "" }: GetInTouchProps) => {
               <MdOutlineEmail className=" text-white text-[22px] sm:text-[24px]" />
             </span>
             {/** Email */}
-            <p className="text-white text-[17px]  transition-all duration-300 ease-in-out group-hover:text-common-purple">
-              <span className="block text-[15px] text-white">E-Mail</span>
+            <p
+              className={`text-white text-[17px]  transition-all duration-300 ease-in-out group-hover:text-common-purple ${valueClassName}`}
+            >
+              <span
+                className={`block text-[15px] text-white ${labelClassName}`}
+              >
+                E-Mail
+              </span>
               {EMAIL}
             </p>
           </Link>
@@ -52,13 +68,15 @@ const GetInTouch = ({ className = "" }: GetInTouchProps) => {
             </span>
             {/** Phone number */}
             <div className="text-white text-[17px]">
-              <span className="block text-[15px] mb-[1px]">Phone number</span>
+              <span className={`block text-[15px] mb-[1px] ${labelClassName}`}>
+                Phone number
+              </span>
               {PHONE_NUMBERS?.map((phoneNumber, idx) => (
                 <Link
                   key={idx}
                   title={`Contact ${phoneNumber}`}
                   href={`tel:${phoneNumber}`}
-                  className="block  transition-all duration-300 ease-in-out hover:text-common-purple"
+                  className={`block  transition-all duration-300 ease-in-out hover:text-common-purple ${valueClassName}`}
                 >
                   {phoneNumber}
                 </Link>
@@ -77,8 +95,10 @@ const GetInTouch = ({ className = "" }: GetInTouchProps) => {
               <MdOutlineLocationOn className="text-white text-[22px] sm:text-[24px]" />
             </span>
             {/** Phone number */}
-            <p className="text-white text-[17px]">
-              <span className="block text-[15px] mb-[1px]">Location</span>
+            <p className={`text-white text-[17px] ${valueClassName}`}>
+              <span className={`block text-[15px] mb-[1px] ${labelClassName}`}>
+                Location
+              </span>
               {LOCATION}
             </p>
           </div>

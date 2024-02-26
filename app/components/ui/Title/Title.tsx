@@ -7,6 +7,7 @@ interface TitleProps {
   style?: React.CSSProperties;
   uppercase?: boolean;
   size?: "small" | "medium" | "large";
+  colorfulWords?: string[];
 }
 
 const textSizeClasses = {
@@ -15,7 +16,7 @@ const textSizeClasses = {
   medium:
     "text-[30px] xxs:text-[33px] xs:text-[34px] md:text-[35px] xl:text-[47px] 2xl:text-[53px]",
   large:
-    "text-[36px] xxs:text-[40px] xs:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px]",
+    "text-[38px] xxs:text-[42px] xs:text-[50px] md:text-[60px] xl:text-[70px] 2xl:text-[80px]",
 };
 
 const Title = ({
@@ -25,6 +26,7 @@ const Title = ({
   style = {},
   uppercase,
   size = "large",
+  colorfulWords,
 }: TitleProps) => {
   if (h1)
     return (

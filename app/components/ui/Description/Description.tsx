@@ -1,3 +1,4 @@
+import { spaceBetweenText } from "@/app/utils/helper";
 import React from "react";
 // Interface
 interface DescriptionProps {
@@ -10,7 +11,7 @@ const Description = ({ className = "", text }: DescriptionProps) => {
     <p
       className={`text-common-black-2 text-[17px] sm:text-[18px] md:text-[19px] drop-shadow-sm ${className}`}
     >
-      {text}
+      {spaceBetweenText(text)}
     </p>
   );
 };
