@@ -58,14 +58,15 @@ facere corrupti illo blanditiis dignissimos. Voluptates natus, officia
 nemo eligendi, quisquam officiis quas vero vel explicabo, enim nam.
 Esse autem totam sunt nesciunt. (space)
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti nihil nostrum? Ipsam quaerat impedit distinctio reprehenderit facilis nemo, similique quas praesentium id quod commodi quisquam temporibus pariatur molestias corrupti!`;
-//
-export const ABOUT_US_SECOND_TITLE_TEXT = "Why work with us ?";
-export const ABOUT_US_SECOND_DESCRIPTION_TEXT = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nam sunt provident rem reprehenderit tempore, atque modi ipsa maiores facere
-nisi voluptatibus! (space) Illum amet distinctio nobis itaque! Impedit atque
-veritatis quo quasi? Fuga distinctio temporibus magnam eveniet
-necessitatibus quas quibusdam ab natus?`;
 
 // ⭐ TEAM MEMBERS
 
 export const TEAM_MEMBERS_PRETITLE_TEXT = "Team Members";
 export const TEAM_MEMBERS_TITLE_TEXT = "Meet with Us";
+
+//
+export const WHY_WORK_WITH_US_TITLE_TEXT = "Why work with us ?";
+export const WHY_WORK_WITH_US_DESCRIPTION_TEXT = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nam sunt provident rem reprehenderit tempore, atque modi ipsa maiores facere
+nisi voluptatibus! (space) Illum amet distinctio nobis itaque! Impedit atque
+veritatis quo quasi? Fuga distinctio temporibus magnam eveniet
+necessitatibus quas quibusdam ab natus?`;

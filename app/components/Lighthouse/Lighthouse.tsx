@@ -30,7 +30,7 @@ const Lighthouse = ({ className = "" }: LighthouseProps) => {
         {/** Image */}
         <Image
           loading="lazy"
-          src={"/images/lighthouse.png"}
+          src={"/images/lighthouse-2.webp"}
           alt={process.env.NEXT_PUBLIC_ALT_IMAGE as string}
           width={500}
           height={500}

@@ -29,7 +29,7 @@ const WhoWeAre = ({ className = "" }: WhoWeAreProps) => {
       <div className="order-2 lg:order-1">
         <Image
           className="mx-auto"
-          src={"/images/who-we-are.webp"}
+          src={"/images/two-man.webp"}
           loading="lazy"
           alt={process.env.NEXT_PUBLIC_ALT_IMAGE as string}
           width={500}
@@ -44,7 +44,7 @@ const WhoWeAre = ({ className = "" }: WhoWeAreProps) => {
         />
         <Title size="medium" text={WHO_WE_ARE_TITLE_TEXT} className="my-7" />
         <Description text={WHO_WE_ARE_DESCRIPTION_TEXT} />
-        <Button text={WHO_WE_ARE_BTN_TEXT} className="mt-7" />
+        <Button text={WHO_WE_ARE_BTN_TEXT} className="mt-7" href="/about-us" />
       </div>
     </div>
   );

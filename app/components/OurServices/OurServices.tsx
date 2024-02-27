@@ -16,8 +16,14 @@ const ServicesList = dynamic(() => import("./ServicesList"));
 // Interface
 interface OurServicesProps {
   className?: string;
+  includeTitle?: boolean;
+  includeDescription?: boolean;
 }
-const OurServices = ({ className = "" }: OurServicesProps) => {
+const OurServices = ({
+  className = "",
+  includeDescription = true,
+  includeTitle = true,
+}: OurServicesProps) => {
   return (
     <section
       id="services"
@@ -26,8 +32,16 @@ const OurServices = ({ className = "" }: OurServicesProps) => {
       {/** Heading */}
       <div className="text-center">
         <PreTitle text={OUR_SERVICES_PRETITLE_TEXT} className="mx-auto" />
-        <Title size="medium" text={OUR_SERVICES_TITLE_TEXT} className="my-7" />
-        <Description text={OUR_SERVICES_DESCRIPTION_TEXT} />
+        {includeTitle && (
+          <Title
+            size="medium"
+            text={OUR_SERVICES_TITLE_TEXT}
+            className="my-7"
+          />
+        )}
+        {includeDescription && (
+          <Description text={OUR_SERVICES_DESCRIPTION_TEXT} />
+        )}
       </div>
       {/** Services List */}
       <ServicesList className="mt-[4rem] md:mt-[6rem]" />

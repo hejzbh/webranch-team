@@ -3,6 +3,8 @@ import React from "react";
 import Link from "next/link";
 // Constants
 import { navLinks } from "@/app/constants/navLinks";
+// TS
+import { NavLink } from "@/app/types/headerTypes";
 // Interface
 interface NavLinksProps {
   className?: string;
@@ -17,13 +19,15 @@ const directionClassName = {
 const NavLinks = ({ className = "", direction = "row" }: NavLinksProps) => {
   return (
     <ul className={`flex ${directionClassName[direction]} ${className}`}>
-      {navLinks?.map((link, idx) => {
+      {navLinks?.map((link: NavLink, idx) => {
         return (
           <li key={idx}>
             <Link
               title={link.name}
               href={link.href ?? "#"}
               onClick={(e) => {
+                e.stopPropagation();
+
                 if (!link.href) {
                   e.preventDefault();
                   return;

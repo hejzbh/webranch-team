@@ -38,6 +38,7 @@ const PageHeading = ({
         {/** Title & Breadcrumb */}
         <div className="text-center flex flex-col justify-center items-center">
           <Title text={pageTitle} h1 className="text-center" />
+
           <Breadcrumbs breadcrumbs={breadcrumbs} className="mt-5" />
         </div>
         {/** Image */}
