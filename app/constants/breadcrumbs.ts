@@ -1,5 +1,6 @@
 // TS
 import { BreadcrumbType } from "../types/breadcrumb";
+import { projectsList } from "./projects";
 
 //
 const homeBreadcrumb: BreadcrumbType = {
@@ -19,16 +20,32 @@ export const aboutUsBreadcrumbs: BreadcrumbType[] = [
   },
 ];
 
-export function getPortfolioBreadcrumbs(project?: any) {
-  return [
+export function getPortfolioBreadcrumbs(projectSlug?: string) {
+  const breadcrumbs: BreadcrumbType[] = [
     homeBreadcrumb,
     {
       title: "Portfolio",
       description: "Page you are on",
       href: "/portfolio",
-      isActive: !project,
+      isActive: !projectSlug,
     },
-  ] as BreadcrumbType[];
+  ];
+
+  if (projectSlug) {
+    const project = projectsList.find(
+      (project) => project.slug === projectSlug
+    );
+    project
+      ? breadcrumbs.push({
+          title: project?.name,
+          description: "Project you are looking",
+          href: `/portfolio/${projectSlug}`,
+          isActive: true,
+        })
+      : null;
+  }
+
+  return breadcrumbs;
 }
 
 export function getServicesBreadcrumbs(service?: any) {

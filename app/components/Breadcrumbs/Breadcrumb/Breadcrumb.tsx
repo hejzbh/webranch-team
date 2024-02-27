@@ -17,7 +17,7 @@ const Breadcrumb = ({ className = "", breadcrumb }: BreadcrumbProps) => {
       href={breadcrumb.href}
       className={`uppercase ${
         breadcrumb.isActive ? "text-common-purple font-[500]" : "text-text-body"
-      } text-[17px] flex items-center hover:text-common-purple ${className}`}
+      } text-[15px] sm:text-[16px] md:text-[17px] flex items-center hover:text-common-purple ${className}`}
     >
       {breadcrumb.title}{" "}
       {!breadcrumb.isActive && (

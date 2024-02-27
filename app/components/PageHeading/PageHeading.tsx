@@ -2,6 +2,7 @@ import React from "react";
 // Next
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import Link from "next/link";
 // TS
 import { BreadcrumbType } from "@/app/types/breadcrumb";
 // Components
@@ -16,12 +17,19 @@ interface PageHeadingProps {
   pageTitle: string;
   id?: string;
   breadcrumbs: BreadcrumbType[];
+  backgroundImgSRC?: string;
+  link?: {
+    href: string;
+    title: string;
+  };
 }
 const PageHeading = ({
   className = "",
   pageTitle = "Page",
   id = "first-section",
+  backgroundImgSRC = "/images/reflection-bg.webp",
   breadcrumbs = [],
+  link,
 }: PageHeadingProps) => {
   return (
     <div
@@ -29,16 +37,21 @@ const PageHeading = ({
       className={`relative z-[1] py-20 pb-0 overflow-hidden ${className}`}
     >
       {/** Background image */}
-      <BackgroundImage
-        imageSRC={"/images/reflection-bg.webp"}
-        loading="eager"
-      />
+      <BackgroundImage imageSRC={backgroundImgSRC} loading="eager" />
       {/** Content */}
       <div className=" min-h-[32vh] md:min-h-[40vh] relative container mx-auto flex items-center justify-center">
-        {/** Title & Breadcrumb */}
+        {/** Title & Breadcrumb & LINK? */}
         <div className="text-center flex flex-col justify-center items-center">
           <Title text={pageTitle} h1 className="text-center" />
-
+          {link && (
+            <Link
+              title={link.title}
+              href={link.href}
+              className="text-[17px] text-common-purple underline text-center font-[500] mt-3"
+            >
+              {link.title}
+            </Link>
+          )}
           <Breadcrumbs breadcrumbs={breadcrumbs} className="mt-5" />
         </div>
         {/** Image */}

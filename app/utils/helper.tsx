@@ -9,3 +9,7 @@ export const spaceBetweenText = (text: string) => {
     </span>
   ));
 };
+
+/**export const generateRandomId = () =>
+  String(Math.random() * Number.POSITIVE_INFINITY);
+ */
