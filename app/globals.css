@@ -30,6 +30,14 @@
   display: none;
 }
 
+.moveDownUp-animation {
+  animation: moveDownUp 3s infinite linear;
+}
+
+.dropShadow {
+  filter: drop-shadow(18px 8px 3px rgba(000, 000, 000, 0.22));
+}
+
 /* KEYFRAMES */
 @keyframes fadeIn {
   from {
@@ -37,5 +45,17 @@
   }
   to {
     opacity: 100%;
+  }
+}
+
+@keyframes moveDownUp {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8%);
+  }
+  to {
+    transform: translateY(0);
   }
 }

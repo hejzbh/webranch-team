@@ -28,7 +28,7 @@ const WhoWeAre = ({ className = "" }: WhoWeAreProps) => {
       {/** Image */}
       <div className="order-2 lg:order-1">
         <Image
-          className="mx-auto"
+          className="mx-auto dropShadow moveDownUp-animation"
           src={"/images/two-man.webp"}
           loading="lazy"
           alt={process.env.NEXT_PUBLIC_ALT_IMAGE as string}

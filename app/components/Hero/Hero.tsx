@@ -51,14 +51,14 @@ const Hero = ({ className = "" }: HeroProps) => {
           </div>
         </div>
         {/** Image */}
-        <div className="pl-[3em] mt-5 lg:mt-0 lg:pl-0 flex-1 flex justify-end items-center">
+        <div className="pl-[3em] pt-5 lg:pt-0 lg:pl-0 flex-1 flex justify-end items-center">
           <Image
             src="/images/traffic.webp"
             alt={process.env.NEXT_PUBLIC_ALT_IMAGE as string}
             loading="eager"
             width={490}
             height={250}
-            className=""
+            className="moveDownUp-animation dropShadow"
           />
         </div>
       </div>
