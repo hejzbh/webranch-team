@@ -12,13 +12,19 @@ interface NavLinksProps {
 }
 
 const directionClassName = {
-  row: "flex-row space-x-9",
-  column: "flex-col",
+  row: {
+    list: "flex-row space-x-9",
+    link: "py-[40px] text-[15px] lg:text-[16px] text-text-body transition-all duration-300 ease-in-out uppercase font-semibold tracking-widest hover:text-nav-link-hover",
+  },
+  column: {
+    list: "flex-col",
+    link: "text-[18px] font-[500] text-white py-4 block w-full  tracking-wide",
+  },
 };
 
 const NavLinks = ({ className = "", direction = "row" }: NavLinksProps) => {
   return (
-    <ul className={`flex ${directionClassName[direction]} ${className}`}>
+    <ul className={`flex ${directionClassName[direction]?.list} ${className}`}>
       {navLinks?.map((link: NavLink, idx) => {
         return (
           <li key={idx}>
@@ -48,7 +54,7 @@ const NavLinks = ({ className = "", direction = "row" }: NavLinksProps) => {
                   e.preventDefault();
                 }
               }} // Stop navigation if there is no href
-              className={`py-[40px] text-[15px] lg:text-[16px] text-text-body transition-all duration-300 ease-in-out uppercase font-semibold tracking-widest hover:text-nav-link-hover`}
+              className={`${directionClassName[direction]?.link}`}
             >
               {link.name}
             </Link>
