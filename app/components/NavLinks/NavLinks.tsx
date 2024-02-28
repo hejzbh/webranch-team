@@ -23,6 +23,24 @@ const directionClassName = {
 };
 
 const NavLinks = ({ className = "", direction = "row" }: NavLinksProps) => {
+  function onLinkHover(this: number, e: any) {
+    if (window.innerWidth <= 990) return;
+
+    // 1)
+    const navLinksEl = document.querySelectorAll(".nav-link");
+    // 2)
+    const targetEl = e.target;
+    // 3)
+    targetEl.style.opacity = 1;
+    // 4)
+    navLinksEl.forEach((navLink: any) => {
+      // 1)
+      if (navLink.id === targetEl.id) return;
+      // 2)
+      navLink.style.opacity = this;
+    });
+  }
+
   return (
     <ul className={`flex ${directionClassName[direction]?.list} ${className}`}>
       {navLinks?.map((link: NavLink, idx) => {
@@ -30,6 +48,9 @@ const NavLinks = ({ className = "", direction = "row" }: NavLinksProps) => {
           <li key={idx}>
             <Link
               title={link.name}
+              id={idx.toString()}
+              onMouseOver={onLinkHover.bind(0.4)}
+              onMouseOut={onLinkHover.bind(1)}
               href={link.href ?? "#"}
               onClick={(e) => {
                 e.stopPropagation();
@@ -54,7 +75,7 @@ const NavLinks = ({ className = "", direction = "row" }: NavLinksProps) => {
                   e.preventDefault();
                 }
               }} // Stop navigation if there is no href
-              className={`${directionClassName[direction]?.link}`}
+              className={`nav-link ${directionClassName[direction]?.link}`}
             >
               {link.name}
             </Link>
