@@ -3,6 +3,31 @@ export interface Project {
   href: string;
   productionLink?: string;
   images: string[]; // [0] - THUMBNAIL
-  description?: string;
+  largeThumbnailSRC: string;
+  smallThumbnailSRC: string;
+  description: string;
   slug: string;
+  features: string[];
+  summaryCards: ProjectSummaryCard[];
+  testimonialText: string;
+  technologies: Technology[];
 }
+
+export interface ProjectSummaryCard {
+  title: string;
+  value: string;
+  href?: string;
+}
+
+export type Technology =
+  | "html"
+  | "css"
+  | "js"
+  | "react"
+  | "next"
+  | "tailwind"
+  | "webflow"
+  | "figma"
+  | "c++"
+  | "python"
+  | "firebase";

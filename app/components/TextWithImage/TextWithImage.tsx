@@ -38,13 +38,12 @@ const TextWithImage = ({
           <Description text={description} className="mt-4" />
         </div>
         {/** Image */}
-
         <div className={`text-center ${reversed && "order-2 lg:order-1"}`}>
           <Image
             loading="lazy"
             src={imageSRC}
             width={500}
-            className="mx-auto lg:ml-auto w-full max-w-[260px] sm:max-w-[300px] lg:max-w-[500px]"
+            className="mx-auto lg:ml-auto w-full max-w-[260px] sm:max-w-[300px] lg:max-w-[500px] rounded-3xl"
             height={450}
             alt={process.env.NEXT_PUBLIC_ALT_IMAGE as string}
           />

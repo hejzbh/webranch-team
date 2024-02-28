@@ -9,6 +9,9 @@ import { projectsList } from "@/app/constants/projects";
 import { Project } from "@/app/types/projects";
 // Components
 const PageHeading = dynamic(() => import("@/app/components/PageHeading"));
+const AllProjectDetails = dynamic(
+  () => import("@/app/components/AllProjectDetails")
+);
 
 // Interface
 interface ProjectDetailsPageProps {
@@ -48,6 +51,8 @@ const ProjectDetailsPage = async ({ params }: ProjectDetailsPageProps) => {
             : undefined
         }
       />
+      {/** Details */}
+      <AllProjectDetails project={projectDetails} />
     </main>
   );
 };
