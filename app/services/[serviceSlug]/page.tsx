@@ -16,6 +16,9 @@ const CreativeSteps = dynamic(
   () => import("@/app/components/CreativeProcess/CreativeSteps")
 );
 const ContactUs = dynamic(() => import("@/app/components/ContactUs"));
+const BackgroundImage = dynamic(
+  () => import("@/app/components/ui/BackgroundImage")
+);
 // Interface
 interface ServiceDetailsPageProps {
   params: {
@@ -44,12 +47,19 @@ const ServiceDetailsPage = ({ params }: ServiceDetailsPageProps) => {
         breadcrumbs={getServicesBreadcrumbs(params.serviceSlug)}
         backgroundImgSRC="/images/line-2.webp"
       />
-      {/** Details */}
-      <AllServiceDetails service={serviceDetails} />
-      {/** Process */}
-      <CreativeSteps className="container mx-auto mb-10 lg:mb-20 my-20" />
-      {/** Contact Us */}
-      <ContactUs className="!mt-0  !py-10" />
+      <div className="relative z-[1]">
+        {/** Details */}
+        <AllServiceDetails service={serviceDetails} />
+        {/** Process */}
+        <CreativeSteps className="container mx-auto mb-10 lg:mb-20 my-20" />
+        {/** Contact Us */}
+        <ContactUs className="!mt-0  !py-10" />
+        {/** Backgroudn image */}
+        <BackgroundImage
+          className="hidden 2xl:block opacity-40"
+          imageSRC="/images/line.webp"
+        />
+      </div>
     </main>
   );
 };
