@@ -16,12 +16,16 @@ const PreTitle = dynamic(() => import("@/app/components/ui/PreTitle"));
 const Title = dynamic(() => import("@/app/components/ui/Title"));
 const Portfolio = dynamic(() => import("@/app/components/Portfolio"));
 const Button = dynamic(() => import("@/app/components/ui/Button"));
+const AnimatedPortfolio = dynamic(
+  () => import("@/app/components/AnimatedPortfolio")
+);
 // Interface
 interface OurWorkProps {
   className?: string;
   includeBG?: boolean;
   includeTitle?: boolean;
   includeBTN?: boolean;
+  animatedPortfolio?: boolean;
 }
 
 const OurWork = ({
@@ -29,13 +33,14 @@ const OurWork = ({
   includeTitle = true,
   includeBG = true,
   includeBTN = true,
+  animatedPortfolio,
 }: OurWorkProps) => {
   return (
     <section
       className={`relative z-[1] py-20 pb-5 ${sectionSpacingClass} ${className}`}
     >
       {/** Background image */}
-      {includeBG && (
+      {includeBG && !animatedPortfolio && (
         <BackgroundImage
           imageSRC={"/images/reflection-bg.webp"}
           loading="lazy"
@@ -55,7 +60,13 @@ const OurWork = ({
           )}
         </div>
         {/** Portfolio */}
-        <Portfolio className="my-20" />
+        {animatedPortfolio ? (
+          <>
+            <AnimatedPortfolio />
+          </>
+        ) : (
+          <Portfolio className="my-20" />
+        )}
         {/** BTN */}
         {includeBTN && (
           <Button className="mx-auto" uppercase text={OUR_WORK_BTN_TEXT} />

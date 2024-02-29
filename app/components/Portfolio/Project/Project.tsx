@@ -28,7 +28,7 @@ const Project = ({ className, project }: ProjectProps) => {
         {/** Image */}
         <BackgroundImage
           imageSRC={project.smallThumbnailSRC}
-          className="!object-cover transition-all duration-700 ease-in-out group-hover:scale-110"
+          className="!object-cover shadow-2xl transition-all duration-700 ease-in-out group-hover:scale-110"
         />
         {/** Button (Display on hover) */}
         <Button

@@ -11,6 +11,9 @@ const OurWork = dynamic(() => import("@/app/components/OurWork"));
 const Lighthouse = dynamic(() => import("@/app/components/Lighthouse"));
 const Testimonials = dynamic(() => import("@/app/components/Testimonials"));
 const Blog = dynamic(() => import("@/app/components/Blog"));
+const AnimatedPortfolio = dynamic(
+  () => import("@/app/components/AnimatedPortfolio")
+);
 
 export default function Home() {
   return (
@@ -19,7 +22,7 @@ export default function Home() {
       <CreativeProcess />
       <WhoWeAre />
       <OurServices />
-      <OurWork />
+      <OurWork animatedPortfolio />
       <Lighthouse />
       <Testimonials />
       <Blog />
