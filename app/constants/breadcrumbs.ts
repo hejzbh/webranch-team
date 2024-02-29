@@ -1,6 +1,7 @@
 // TS
 import { BreadcrumbType } from "../types/breadcrumb";
 import { projectsList } from "./projects";
+import { services } from "./services";
 
 //
 const homeBreadcrumb: BreadcrumbType = {
@@ -48,16 +49,30 @@ export function getPortfolioBreadcrumbs(projectSlug?: string) {
   return breadcrumbs;
 }
 
-export function getServicesBreadcrumbs(service?: any) {
-  return [
+export function getServicesBreadcrumbs(serviceSlug?: string) {
+  const breadcrumbs: BreadcrumbType[] = [
     homeBreadcrumb,
     {
       title: "Services",
       description: "Page you are on",
       href: "/services",
-      isActive: !service,
+      isActive: !serviceSlug,
     },
-  ] as BreadcrumbType[];
+  ];
+
+  if (serviceSlug) {
+    const service = services.find((service) => service.slug === serviceSlug);
+    service
+      ? breadcrumbs.push({
+          title: service?.name,
+          description: "Service you are looking",
+          href: `/services/${serviceSlug}`,
+          isActive: true,
+        })
+      : null;
+  }
+
+  return breadcrumbs;
 }
 
 export function getContactBreadcrumbs() {

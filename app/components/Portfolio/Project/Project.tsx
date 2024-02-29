@@ -22,7 +22,7 @@ const Project = ({ className, project }: ProjectProps) => {
     <div className={`h-full ${className}`}>
       <Link
         className="block relative h-full min-h-[22em] sm:min-h-[25em] z-[1] p-20 group overflow-hidden border-[5px] border-white rounded-[20px]"
-        href={project.href}
+        href={`/portfolio/${project.slug}`}
         title={project.name}
       >
         {/** Image */}

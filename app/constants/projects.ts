@@ -20,7 +20,6 @@ export const projectsList: Project[] = [
      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, aut
      unde ducimus voluptates accusantium nulla officia neque eius nam sit
      labore fugiat eum tenetur deserunt atque.`,
-    href: "/portfolio/1",
     smallThumbnailSRC: "/images/projects/project2.webp",
     largeThumbnailSRC: "/images/projects/project2.webp",
     productionLink: "/",
@@ -55,7 +54,6 @@ export const projectsList: Project[] = [
     name: "Hunting",
     images: ["/images/projects/case-2.webp"],
     description: "",
-    href: "/portfolio/2",
     smallThumbnailSRC: "/images/projects/case-1.webp",
     largeThumbnailSRC: "/images/projects/test2.png",
     slug: "2",
@@ -72,7 +70,6 @@ export const projectsList: Project[] = [
     smallThumbnailSRC: "/images/projects/case-2.webp",
     largeThumbnailSRC: "/images/projects/test2.png",
     description: "",
-    href: "/portfolio/3",
     slug: "2",
     summaryCards: [],
     features: [],
@@ -85,7 +82,6 @@ export const projectsList: Project[] = [
     name: "Paradox",
     images: ["/images/projects/case-4.webp"],
     description: "",
-    href: "/portfolio/4",
     smallThumbnailSRC: "/images/projects/case-3.webp",
     largeThumbnailSRC: "/images/projects/test2.png",
     slug: "4",
