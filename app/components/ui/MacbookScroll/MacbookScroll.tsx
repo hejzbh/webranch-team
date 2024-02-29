@@ -60,7 +60,7 @@ export const MacbookScroll = ({
   );
   const scaleY = useTransform(
     scrollYProgress,
-    [0, 0.3],
+    [0, 0.2],
     [0.6, isMobile ? 1 : 1.5]
   );
   const translate = useTransform(scrollYProgress, [0, 1], [0, 1500]);
@@ -69,7 +69,7 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className={`min-h-[150vh]  flex flex-col items-center py-0 md:pb-80 md:pt-20 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50 ${className}`}
+      className={`min-h-[95vh] md:min-h-[150vh]  flex flex-col items-center py-0 md:pb-80 md:pt-20 justify-start flex-shrink-0 [perspective:800px] transform md:scale-80 scale-[0.40]  xxxs:scale-[0.50] xs:scale-[0.60] sm:scale-[0.70] lg:scale-100 ${className}`}
     >
       {/* Lid */}
       <Lid

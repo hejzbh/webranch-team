@@ -17,16 +17,8 @@ const AnimatedPortfolio = ({ className = "" }: AnimatedPortfolioProps) => {
   return (
     <section className={`overflow-hidden w-full relative mb-7 ${className}`}>
       {projectsList?.map((project, i) => (
-        <div
-          key={project.slug}
-          className="relative bg-white"
-          style={{ zIndex: i + 1 }}
-        >
-          <MacbookScroll
-            src={project.smallThumbnailSRC}
-            showGradient={true}
-            className={`z-[${i + 1}]`}
-          >
+        <div key={project.slug} className="relative sm:bg-white">
+          <MacbookScroll src={project.smallThumbnailSRC} showGradient={true}>
             {" "}
             <Project project={project} className="shadow-2xl" />
           </MacbookScroll>
