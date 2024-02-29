@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ------------------------ */
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 7px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.86, #6864ed),
+    color-stop(0.72, #7b78ee)
+  );
+}
+
+/* ---------------------- */
+
 .stickyAnimation {
   animation: fadeIn 0.4s ease-in-out;
 }
