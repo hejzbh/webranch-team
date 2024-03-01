@@ -37,6 +37,22 @@ const Button = ({
       }
       return;
     }
+
+    if (href.startsWith("#")) {
+      const sectionID = href.slice(1);
+      const section = document.getElementById(sectionID);
+
+      if (!section) return;
+
+      const sectionRect = section?.getBoundingClientRect();
+
+      window.scroll({
+        top: sectionRect.y + window.scrollY - 100,
+        behavior: "smooth",
+      });
+      return;
+    }
+
     router.push(href);
   }
 
