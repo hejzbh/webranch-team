@@ -2,10 +2,10 @@ import { Service } from "../types/services";
 
 export const services: Service[] = [
   {
-    name: "Market Research",
-    imageSRC: "/images/icons/market-research.png",
+    name: "Web Development",
+    imageSRC: "/images/icons/web-dev.png",
     shortDescription:
-      "Grursus mal suada faci ipsum and our the dolarorit ametion consectetur.",
+      "Crafting dynamic websites with cutting-edge technology for your digital presence",
     longDescription: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. (space) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
@@ -13,10 +13,10 @@ export const services: Service[] = [
     slug: "1",
   },
   {
-    name: "Creative Layout",
-    imageSRC: "/images/icons/creative-lay.png",
+    name: "Webflow",
+    imageSRC: "/images/icons/webflow.svg",
     shortDescription:
-      "Grursus mal suada faci ipsum and our the dolarorit ametion consectetur.",
+      "Empowering your web design with seamless integration and intuitive content management",
     longDescription: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. (space) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
@@ -24,10 +24,10 @@ export const services: Service[] = [
     slug: "2",
   },
   {
-    name: "Digital Marketing",
-    imageSRC: "/images/icons/digital-marketing.png",
+    name: "App Development",
+    imageSRC: "/images/icons/app-dev.png",
     shortDescription:
-      "Grursus mal suada faci ipsum and our the dolarorit ametion consectetur.",
+      "Building personalized mobile applications that perfectly match your business goals and needs",
     longDescription: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. (space) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
@@ -35,10 +35,10 @@ export const services: Service[] = [
     slug: "3",
   },
   {
-    name: "Market Research",
-    imageSRC: "/images/icons/market-research.png",
+    name: "Game Development",
+    imageSRC: "/images/icons/game-dev.png",
     shortDescription:
-      "Grursus mal suada faci ipsum and our the dolarorit ametion consectetur.",
+      "Creating immersive gaming experiences that captivate and entertain your audience",
     longDescription: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. (space) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
@@ -46,10 +46,10 @@ export const services: Service[] = [
     slug: "4",
   },
   {
-    name: "Web Development",
-    imageSRC: "/images/icons/web-dev.png",
+    name: "E-Commerce",
+    imageSRC: "/images/icons/design.png",
     shortDescription:
-      "Grursus mal suada faci ipsum and our the dolarorit ametion consectetur.",
+      "Maximize global sales with our advanced platform featuring intuitive dashboards and seamless integration",
     longDescription: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. (space) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
@@ -57,10 +57,10 @@ export const services: Service[] = [
     slug: "4",
   },
   {
-    name: "App Development",
-    imageSRC: "/images/icons/app-dev.png",
+    name: "Custom Solutions",
+    imageSRC: "/images/icons/custom-dev.png",
     shortDescription:
-      "Grursus mal suada faci ipsum and our the dolarorit ametion consectetur.",
+      "We build personalized digital solutions to perfectly fit your needs, using our expert programming skills",
     longDescription: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. (space) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. (space) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate

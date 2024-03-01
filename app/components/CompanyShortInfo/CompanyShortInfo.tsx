@@ -18,7 +18,7 @@ const CompanyShortInfo = ({
       <Logo className="min-w-[150px]" />
       <Description
         className={`${descriptionClassName}`}
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsum quisquam corporis ipsa alias vel."
+        text="Meet Webranch: your friendly digital experts, here to make your online dreams come true with ease."
       />
     </div>
   );
