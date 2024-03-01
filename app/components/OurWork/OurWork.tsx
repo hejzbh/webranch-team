@@ -62,7 +62,14 @@ const OurWork = ({
         {/** Portfolio */}
         {animatedPortfolio ? (
           <>
-            <AnimatedPortfolio />
+            <div className="hidden md:block">
+              {" "}
+              <AnimatedPortfolio />
+            </div>
+            <div className="block md:hidden">
+              {" "}
+              <Portfolio className="my-20" />
+            </div>
           </>
         ) : (
           <Portfolio className="my-20" />
