@@ -1,8 +1,9 @@
 // ⭐ HERO
-export const HERO_PRETITLE_TEXT: string = "Best solution we offer you";
-export const HERO_TITLE_TEXT: string = "Make a good plan & grow your business";
+export const HERO_PRETITLE_TEXT: string = "Turning Ideas into Reality";
+export const HERO_TITLE_TEXT: string =
+  "Trust the experts and be amazed by the results";
 export const HERO_DESCRIPTION_TEXT: string =
-  "We have almost 10+ years of experience for helping consulting services and business solutions.";
+  "Utilize Amel and Hazim's skills for top-quality web, mobile, and digital solutions, guiding you towards success.";
 
 export const HERO_BTN_1_TEXT = "Explore more";
 
@@ -16,19 +17,19 @@ export const WHO_WE_ARE_PRETITLE_TEXT = "Who We Are";
 export const WHO_WE_ARE_TITLE_TEXT =
   "We are dynamic team of creative design and development";
 export const WHO_WE_ARE_DESCRIPTION_TEXT =
-  "We have almost 12+ years of experience for helping consulting services and business solutions and best protect.";
+  "After years of working in companies, Amel and Hazim are combining their skills and founding their own team for digital solutions, called Webranch.";
 export const WHO_WE_ARE_BTN_TEXT = "About Us";
 
 // ⭐ OUR SERVICES
-export const OUR_SERVICES_PRETITLE_TEXT = "What we can do for you?";
+export const OUR_SERVICES_PRETITLE_TEXT = "Let Us Amaze You";
 export const OUR_SERVICES_TITLE_TEXT = "Service we can help you with";
 export const OUR_SERVICES_DESCRIPTION_TEXT =
   "We'll ensure you always get the best Digital Service";
 
 // ⭐ OUR WORK
 export const OUR_WORK_PRETITLE_TEXT = "Check our Work";
-export const OUR_WORK_TITLE_TEXT = "Some of our recent case studies";
-export const OUR_WORK_BTN_TEXT = "All Case Studies";
+export const OUR_WORK_TITLE_TEXT = "Some of our recent projects";
+export const OUR_WORK_BTN_TEXT = "View portfolio";
 
 // ⭐ TESTIMOANIALS
 export const TESTIMONIALS_PRETITLE_TEXT = "Testimonial";
@@ -42,7 +43,7 @@ export const HOME_BLOG_TITLE_TEXT = "Read our Latest stories";
 export const LIGHTHOUSE_PRETITLE_TEXT = "What Google say about us";
 export const LIGHTHOUSE_TITLE_TEXT = "We care about what others don't";
 export const LIGHTHOUSE_DESCRIPTION_TEXT =
-  "Grursus mal suada faci lisis Lorem ipsum dolarorit ametion the at dummy consectetur elitesti at bulum nec odio aea.";
+  "While others overlook it, we excel in Google's Lighthouse testing—scoring high in performance, best practices, accessibility, and more across our projects.";
 
 // ⭐ ABOUT US
 export const ABOUT_US_TITLE_TEXT = "About Us";

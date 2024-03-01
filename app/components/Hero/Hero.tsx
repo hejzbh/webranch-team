@@ -38,7 +38,7 @@ const Hero = ({ className = "" }: HeroProps) => {
           <PreTitle text={HERO_PRETITLE_TEXT} />
           <Title
             h1
-            className="mb-1 lg:mb-7 my-7 text-center md:text-left"
+            className="mb-1 lg:mb-3 my-7 text-center md:text-left"
             text={HERO_TITLE_TEXT}
           />
           <Description
@@ -47,7 +47,7 @@ const Hero = ({ className = "" }: HeroProps) => {
           />
           {/** Buttons */}
           <div className="flex items-center space-x-2 mt-7">
-            <Button text={HERO_BTN_1_TEXT} uppercase />
+            <Button text={HERO_BTN_1_TEXT} uppercase href="#creative-process" />
           </div>
         </div>
         {/** Image */}

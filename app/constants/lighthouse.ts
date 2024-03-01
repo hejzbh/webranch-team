@@ -12,25 +12,19 @@ export const lighthouseList: {
   {
     Icon: CgPerformance,
     name: "Performance",
-    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-Similique veniam veritatis id, necessitatibus eos ipsum
-obcaecati omnis placeat ratione atque.`,
+    description: `We optimize for speed and efficiency, ensuring smooth experiences across all platforms.`,
     colorClass: "text-performance",
   },
   {
     Icon: IoSettingsOutline,
     name: "Accessbility",
-    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-Similique veniam veritatis id, necessitatibus eos ipsum
-obcaecati omnis placeat ratione atque.`,
+    description: `We prioritize inclusivity, making our projects usable for all users.`,
     colorClass: "text-best",
   },
   {
     Icon: SiGooglemarketingplatform,
     name: "SEO",
-    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-Similique veniam veritatis id, necessitatibus eos ipsum
-obcaecati omnis placeat ratione atque.`,
+    description: `We lay the groundwork for strong SEO, ensuring your online presence gets noticed.`,
     colorClass: "text-seo",
   },
 ];
