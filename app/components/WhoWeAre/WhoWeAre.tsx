@@ -26,7 +26,7 @@ const WhoWeAre = ({ className = "" }: WhoWeAreProps) => {
       className={`container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 items-center ${sectionSpacingClass} ${className}`}
     >
       {/** Image */}
-      <div className="order-2 lg:order-1">
+      <div className="order-2 lg:order-1" data-aos="fade-right">
         <Image
           className="mx-auto dropShadow moveDownUp-animation"
           src={"/images/two-man.webp"}
@@ -37,7 +37,10 @@ const WhoWeAre = ({ className = "" }: WhoWeAreProps) => {
         />
       </div>
       {/** Text */}
-      <div className="order-1 lg:order-2 text-center md:text-left">
+      <div
+        data-aos="fade-left"
+        className="order-1 lg:order-2 text-center md:text-left"
+      >
         <PreTitle
           text={WHO_WE_ARE_PRETITLE_TEXT}
           className="mx-auto md:mx-[unset]"

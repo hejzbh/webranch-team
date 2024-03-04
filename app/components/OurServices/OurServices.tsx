@@ -27,6 +27,8 @@ const OurServices = ({
   return (
     <section
       id="services"
+      data-aos="fade-up"
+      data-aos-duration="700"
       className={`container mx-auto ${sectionSpacingClass} ${className}`}
     >
       {/** Heading */}

@@ -37,6 +37,8 @@ const OurWork = ({
 }: OurWorkProps) => {
   return (
     <section
+      data-aos="fade-up"
+      data-aos-duration="700"
       className={`relative z-[1] py-20 pb-5 ${sectionSpacingClass} ${className}`}
     >
       {/** Background image */}

@@ -23,6 +23,7 @@ interface BlogProps {
 const Blog = ({ className = "" }: BlogProps) => {
   return (
     <section
+      data-aos="fade-up"
       className={` relative z-[1] py-20 ${sectionSpacingClass} ${className}`}
     >
       {/** Background Image */}

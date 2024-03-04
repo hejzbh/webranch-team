@@ -8,6 +8,9 @@ interface TitleProps {
   uppercase?: boolean;
   size?: "small" | "medium" | "large" | "largeWithSmallMobile";
   colorfulWords?: string[];
+  animation?: string;
+  animationDuration?: number;
+  animationDelay?: number;
 }
 
 const textSizeClasses = {
@@ -28,11 +31,16 @@ const Title = ({
   style = {},
   uppercase,
   size = "large",
-  colorfulWords,
+  animation = "",
+  animationDuration = 300,
+  animationDelay = 0,
 }: TitleProps) => {
   if (h1)
     return (
       <h1
+        data-aos={animation}
+        data-aos-duration={animationDuration}
+        data-aos-delay={animationDelay}
         style={{ lineHeight: 1.1, ...style }}
         className={`${
           textSizeClasses[size]
@@ -46,6 +54,9 @@ const Title = ({
 
   return (
     <h2
+      data-aos={animation}
+      data-aos-duration={animationDuration}
+      data-aos-delay={animationDelay}
       style={{ lineHeight: 1.2, ...style }}
       className={`${
         textSizeClasses[size]

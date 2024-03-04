@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 const Header = dynamic(() => import("@/app/components/Header"));
 const ScrollToTop = dynamic(() => import("@/app/components/ScrollToTop"));
 const Footer = dynamic(() => import("@/app/components/Footer"));
+const AOS = dynamic(() => import("@/app/components/AOS"));
 // Font
 const poppinsFont = Poppins({
   subsets: ["latin", "latin-ext"],
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppinsFont.className} style={{ minHeight: "200vh" }}>
+        <AOS />
         <Header />
         {children}
         <ScrollToTop className="!fixed bottom-10 right-10 z-[20]" />

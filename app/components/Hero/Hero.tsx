@@ -31,27 +31,45 @@ const Hero = ({ className = "" }: HeroProps) => {
         loading="eager"
       />
       {/** Content */}
-      <div className="container min-h-screen mx-auto pt-[140px] md:pt-[190px] pb-[88px] flex flex-col items-center justify-between space-y-7 lg:flex-row lg:space-y-0 lg:space-x-7">
+      <div
+        data-aos="fade-in"
+        className="container min-h-screen mx-auto pt-[140px] md:pt-[190px] pb-[88px] flex flex-col items-center justify-between space-y-7 lg:flex-row lg:space-y-0 lg:space-x-7"
+      >
         {/** Text */}
         <div className="flex-1 flex flex-col justify-center items-center md:items-start">
           {/** Pretitle & Title & Description */}
-          <PreTitle text={HERO_PRETITLE_TEXT} />
+          <PreTitle
+            text={HERO_PRETITLE_TEXT}
+            animationDelay={300}
+            animation="fade-up"
+          />
           <Title
             h1
             className="mb-1 lg:mb-3 my-7 text-center md:text-left"
             text={HERO_TITLE_TEXT}
+            animation="fade-up"
+            animationDuration={400}
           />
           <Description
             text={HERO_DESCRIPTION_TEXT}
             className="text-center md:text-left"
+            animation="fade-in"
+            animationDelay={400}
           />
           {/** Buttons */}
-          <div className="flex items-center space-x-2 mt-7">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            className="flex items-center space-x-2 mt-7"
+          >
             <Button text={HERO_BTN_1_TEXT} uppercase href="#creative-process" />
           </div>
         </div>
         {/** Image */}
-        <div className="pl-[3em] pt-5 lg:pt-0 lg:pl-0 flex-1 flex justify-end items-center">
+        <div
+          data-aos="fade-left"
+          className="pl-[3em] pt-5 lg:pt-0 lg:pl-0 flex-1 flex justify-end items-center"
+        >
           <Image
             src="/images/traffic.webp"
             alt={process.env.NEXT_PUBLIC_ALT_IMAGE as string}

@@ -34,6 +34,8 @@ const Header = ({ className = "" }: HeaderProps) => {
   return (
     <>
       <header
+        data-aos="fade-in"
+        data-aos-duration="500"
         className={` z-[100] w-full top-0 border-b-[1px] border-b-tp-border-3 ${
           isSticky ? "fixed bg-white shadow-sm stickyAnimation" : "absolute"
         } ${className}`}

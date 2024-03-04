@@ -15,6 +15,8 @@ const CreativeSteps = ({ className = "" }: CreativeStepsProps) => {
       {creativeProcessSteps?.map((step, idx, steps) => {
         return (
           <div
+            data-aos="fade-in"
+            data-aos-delay={idx * 300}
             className={`w-full relative pt-2 lg:pt-10 text-center  ${
               idx === steps.length - 1 && "ssm:col-span-3 lg:col-span-1"
             }`}

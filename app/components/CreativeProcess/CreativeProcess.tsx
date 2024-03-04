@@ -18,7 +18,12 @@ interface CreativeProcessProps {
 
 const CreativeProcess = ({ className = "" }: CreativeProcessProps) => {
   return (
-    <div id="creative-process" className={`container mx-auto ${className}`}>
+    <div
+      data-aos="fade-up"
+      data-aos-duration="700"
+      id="creative-process"
+      className={`container mx-auto ${className}`}
+    >
       {/** Heading */}
       <div className="flex justify-between items-end flex-col md:flex-row md:items-start">
         {/** PreTitle & Title */}

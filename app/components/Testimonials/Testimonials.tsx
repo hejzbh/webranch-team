@@ -17,7 +17,11 @@ interface TestimonialsProps {
 }
 const Testimonials = ({ className = "" }: TestimonialsProps) => {
   return (
-    <section className={`${sectionSpacingClass} ${className}`}>
+    <section
+      data-aos="fade-up"
+      data-aos-duration="700"
+      className={`${sectionSpacingClass} ${className}`}
+    >
       {/** Heading */}
       <div className="container mx-auto text-center">
         <PreTitle text={TESTIMONIALS_PRETITLE_TEXT} className="mx-auto" />
