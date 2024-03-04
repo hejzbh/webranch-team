@@ -42,31 +42,37 @@ export const projectsList: Project[] = [
     technologies: ["html", "css", "js", "react", "next", "tailwind"],
   },
   {
-    name: "Hunting",
-    images: ["/images/projects/case-2.webp"],
+    name: "Zerost",
+    images: [
+      "/images/projects/zerost/thumbnail.webp",
+      "/images/projects/zerost/transparent.webp",
+      "/images/projects/zerost/long.webp",
+    ],
     description: "",
-    smallThumbnailSRC: "/images/projects/case-1.webp",
-    largeThumbnailSRC: "/images/projects/test2.png",
+    smallThumbnailSRC: "/images/projects/zerost/thumbnail.webp",
+    largeThumbnailSRC: "/images/projects/zerost/thumbnail.webp",
     slug: "2",
-    summaryCards: [],
-    features: [],
-    testimonialText: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe porro ea
-    nostrum ratione rerum? (space) Quo quos temporibus eveniet voluptas autem
-    cupiditate illum optio molestiae praesentium.`,
-    technologies: ["html", "css", "js", "react", "next", "tailwind"],
-  },
-  {
-    name: "InFest",
-    images: ["/images/projects/case-3.webp"],
-    smallThumbnailSRC: "/images/projects/case-2.webp",
-    largeThumbnailSRC: "/images/projects/test2.png",
-    description: "",
-    slug: "2",
-    summaryCards: [],
-    features: [],
-    testimonialText: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe porro ea
-    nostrum ratione rerum? (space) Quo quos temporibus eveniet voluptas autem
-    cupiditate illum optio molestiae praesentium.`,
+    productionLink: "https://webranch-zerost.netlify.app/",
+    summaryCards: [
+      { title: "Date", value: "17-11-2023" },
+      { title: "Client", value: "Anonymous" },
+      {
+        title: "URL",
+        value: "webranch-zerost.app",
+        href: "https://webranch-zerost.netlify.app/",
+      },
+      {
+        title: "Location",
+        value: "Australia",
+      },
+    ],
+    features: [
+      "Responsive",
+      "Reveal Animate",
+      "Pixel Perfect",
+      "SEO Optimized",
+    ],
+    testimonialText: `Working with Webranch Team to develop our website was an absolute pleasure. (space) Their team's expertise and attention to detail truly exceeded our expectations. The end result is a stunning website that perfectly captures the essence of our brand and showcases our innovative AI technologies and immersive experiences.`,
     technologies: ["html", "css", "js", "react", "next", "tailwind"],
   },
   {
