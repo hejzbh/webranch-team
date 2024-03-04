@@ -1,53 +1,44 @@
 import { Project } from "../types/projects";
 
+/**Welcome to the world of Tuffex, where our goal was to create an application that is more than just a platform - it was envisioned to be pixel-perfect to the last detail. With a sharp focus on speed, simplicity, and power, Tuffex is designed to provide a seamless experience to users worldwide. With an intuitive interface that takes your breath away and technological capabilities that reach into infinity, this platform represents a symbiosis of elegant design and revolutionary functionality. Dive into the world of Tuffex and experience the music revolution firsthand. */
 export const projectsList: Project[] = [
   {
-    name: "Laundry App",
+    name: "Tuffex",
     images: [
-      "/images/projects/40.webp",
-      "/images/projects/41.webp",
-      "/images/projects/42.webp",
+      "/images/projects/tuffex/thumbnail.webp",
+      "/images/projects/tuffex/real.webp",
+      "/images/projects/tuffex/long.webp",
     ],
-    description: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, aut
-    unde ducimus voluptates accusantium nulla officia neque eius nam sit
-    labore fugiat eum tenetur deserunt atque voluptate rerum illo eveniet
-    obcaecati quasi voluptas enim omnis odit excepturi.
+    description: `Welcome to the world of Tuffex, where our goal was to create an website that is more than just a platform - it was envisioned to be pixel-perfect to the last detail.
     (space)
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, aut
-     unde ducimus voluptates accusantium nulla officia neque eius nam sit
-     labore fugiat eum
+    With a sharp focus on speed, simplicity, and power, Tuffex is designed to provide a seamless experience to users worldwide.  With an intuitive interface that takes your breath away and technological capabilities that reach into infinity, this platform represents a symbiosis of elegant design and revolutionary functionality.
      (space)
-     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, aut
-     unde ducimus voluptates accusantium nulla officia neque eius nam sit
-     labore fugiat eum tenetur deserunt atque.`,
-    smallThumbnailSRC: "/images/projects/project2.webp",
-    largeThumbnailSRC: "/images/projects/project2.webp",
-    productionLink: "/",
+     Dive into the world of Tuffex and experience the music revolution firsthand.`,
+    smallThumbnailSRC: "/images/projects/tuffex/thumbnail.webp",
+    largeThumbnailSRC: "/images/projects/tuffex/small.webp",
+    productionLink: "https://webranch-tuffex.netlify.app/",
     slug: "1",
     summaryCards: [
-      { title: "Date", value: "10-03-2023" },
-      { title: "Client", value: "John Smith" },
+      { title: "Date", value: "24-12-2023" },
+      { title: "Client", value: "Anonymous" },
       {
         title: "URL",
-        value: "www.mbexpert.at",
-        href: "https://www.mbexpert.at",
+        value: "webranch-tuffex.app",
+        href: "https://webranch-tuffex.netlify.app/",
       },
       {
         title: "Location",
-        value: "Australia",
+        value: "London",
       },
     ],
     features: [
       "Responsive",
-      "Multipage",
-      "Checkout",
+      "Animations",
+      "Dynamic",
       "Pixel Perfect",
       "SEO Optimized",
     ],
-    testimonialText: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe porro ea
-    nostrum ratione rerum. Quo quos temporibus eveniet voluptas autem
-    cupiditate illum optio molestiae praesentium.   (space) Am dolor sit amet consectetur, adipisicing elit. Saepe porro ea
-    nostrum ratione rerum? Quo quos temporibus eveni`,
+    testimonialText: `Webranch exceeded our expectations in every aspect. (space) Their attention to detail, professionalism, and dedication to our project were truly commendable. From the initial concept discussions to the final delivery, they demonstrated expertise and creativity at every step.`,
     technologies: ["html", "css", "js", "react", "next", "tailwind"],
   },
   {
