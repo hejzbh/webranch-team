@@ -14,6 +14,9 @@ interface TextWithImageProps {
   title: string;
   description: string;
   reversed?: boolean;
+  animation?: string;
+  animationDuration?: number;
+  animationDelay?: number;
 }
 const TextWithImage = ({
   className = "",
@@ -21,9 +24,15 @@ const TextWithImage = ({
   title = "",
   imageSRC = "/images/teamwork.webp",
   reversed,
+  animation = "",
+  animationDuration = 300,
+  animationDelay = 0,
 }: TextWithImageProps) => {
   return (
     <section
+      data-aos={animation}
+      data-aos-duration={animationDuration}
+      data-aos-delay={animationDelay}
       className={`container mx-auto ${sectionSpacingClass} ${className}`}
     >
       {/** Text 1 */}

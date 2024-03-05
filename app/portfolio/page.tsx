@@ -19,6 +19,7 @@ const PortfolioPage = () => {
       <PageHeading
         breadcrumbs={getPortfolioBreadcrumbs()}
         pageTitle="Portfolio"
+        animation="fade-in"
       />
       <div className="relative z-[1]">
         <OurWork

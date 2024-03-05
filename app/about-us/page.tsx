@@ -18,15 +18,20 @@ const WhyWorkWithUs = dynamic(() => import("@/app/components/WhyWorkWithUs"));
 const AboutUsPage = () => {
   return (
     <main className="min-h-screen">
-      <PageHeading breadcrumbs={aboutUsBreadcrumbs} pageTitle="About Us" />
+      <PageHeading
+        breadcrumbs={aboutUsBreadcrumbs}
+        pageTitle="About Us"
+        animation="fade-in"
+      />
       <TextWithImage
+        animation="fade-up"
         imageSRC="/images/two-man-2.webp"
         title={ABOUT_US_FIRST_TITLE_TEXT}
         description={ABOUT_US_FIRST_DESCRIPTION_TEXT}
         className="!mt-0 md:!mt-20"
       />
-      <TeamMembers className="py-5" />
-      <WhyWorkWithUs />
+      <TeamMembers className="py-5" animation="fade-up" />
+      <WhyWorkWithUs animation="fade-up" />
       <Testimonials />
       <ContactUs />
     </main>

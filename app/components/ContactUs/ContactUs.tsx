@@ -18,6 +18,8 @@ interface ContactUsProps {
 const ContactUs = ({ className = "" }: ContactUsProps) => {
   return (
     <section
+      data-aos="fade-in"
+      data-aos-duration="500"
       className={`relative z-[1]  py-20 pb-[13rem]  ${sectionSpacingClass} ${className}`}
     >
       {/** Background image */}

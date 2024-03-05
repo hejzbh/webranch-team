@@ -16,9 +16,10 @@ const ServicesPage = () => {
       <PageHeading
         breadcrumbs={getServicesBreadcrumbs()}
         pageTitle="Services"
+        animation="fade-in"
       />
       <OurServices className="!mt-0" includeTitle={false} />
-      <WhyWorkWithUs className="md:mt-[12rem]" />
+      <WhyWorkWithUs className="md:mt-[12rem]" animation="fade-up" />
       <ContactUs />
     </main>
   );

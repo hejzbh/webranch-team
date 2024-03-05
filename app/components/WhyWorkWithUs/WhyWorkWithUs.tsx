@@ -11,17 +11,30 @@ const TextWithImage = dynamic(() => import("@/app/components/TextWithImage"));
 // Interface
 interface WhyWorkWithUsProps {
   className?: string;
+  animation?: string;
+  animationDuration?: number;
+  animationDelay?: number;
 }
 
-const WhyWorkWithUs = ({ className = "" }: WhyWorkWithUsProps) => {
+const WhyWorkWithUs = ({
+  className = "",
+  animation = "",
+  animationDuration = 300,
+  animationDelay = 0,
+}: WhyWorkWithUsProps) => {
   return (
-    <div className={className}>
+    <section
+      data-aos={animation}
+      data-aos-duration={animationDuration}
+      data-aos-delay={animationDelay}
+      className={className}
+    >
       <TextWithImage
         imageSRC="/images/why-us.png"
         title={WHY_WORK_WITH_US_TITLE_TEXT}
         description={WHY_WORK_WITH_US_DESCRIPTION_TEXT}
       />
-    </div>
+    </section>
   );
 };
 

@@ -22,6 +22,9 @@ interface PageHeadingProps {
     href: string;
     title: string;
   };
+  animation?: string;
+  animationDuration?: number;
+  animationDelay?: number;
 }
 const PageHeading = ({
   className = "",
@@ -30,9 +33,15 @@ const PageHeading = ({
   backgroundImgSRC = "/images/reflection-bg.webp",
   breadcrumbs = [],
   link,
+  animation = "",
+  animationDuration = 300,
+  animationDelay = 0,
 }: PageHeadingProps) => {
   return (
     <div
+      data-aos={animation}
+      data-aos-duration={animationDuration}
+      data-aos-delay={animationDelay}
       id={id}
       className={`relative z-[1] py-20 pb-0 overflow-hidden ${className}`}
     >

@@ -16,7 +16,7 @@ const ProjectTechnologies = ({
   technologies = [],
 }: ProjectTechnologiesProps) => {
   return (
-    <section className={`${className}`}>
+    <section data-aos="fade-in" className={`${className}`}>
       {/** Title */}
       <Title size="small" text="Built using" className="text-center" />
       {/** Technologies listing */}

@@ -10,7 +10,11 @@ const ContactUs = dynamic(() => import("@/app/components/ContactUs"));
 const ContactPage = () => {
   return (
     <main className="min-h-screen">
-      <PageHeading pageTitle="Contact" breadcrumbs={getContactBreadcrumbs()} />
+      <PageHeading
+        pageTitle="Contact"
+        breadcrumbs={getContactBreadcrumbs()}
+        animation="fade-in"
+      />
       <ContactUs className="!mt-0" />
     </main>
   );

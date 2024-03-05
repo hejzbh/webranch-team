@@ -14,12 +14,17 @@ const ProjectGallery = ({
 }: ProjectGalleryProps) => {
   return (
     <section
+      data-aos="fade-in"
       className={`${className} grid md:grid-cols-2 gap-10 ${sectionSpacingClass}`}
     >
       {/** First (Mobile top)  */}
       <div className="grid-cols-1 gap-10 grid">
         {images?.slice(0, 2)?.map((img, key) => (
-          <div key={key} className="rounded-3xl overflow-hidden group">
+          <div
+            data-aos="fade-in"
+            key={key}
+            className="rounded-3xl overflow-hidden group"
+          >
             <Image
               loading="lazy"
               src={img}

@@ -15,10 +15,21 @@ const PreTitle = dynamic(() => import("@/app/components/ui/PreTitle"));
 // Interface
 interface TeamMembersProps {
   className?: string;
+  animation?: string;
+  animationDuration?: number;
+  animationDelay?: number;
 }
-const TeamMembers = ({ className = "" }: TeamMembersProps) => {
+const TeamMembers = ({
+  className = "",
+  animation = "",
+  animationDuration = 300,
+  animationDelay = 0,
+}: TeamMembersProps) => {
   return (
     <section
+      data-aos={animation}
+      data-aos-duration={animationDuration}
+      data-aos-delay={animationDelay}
       className={`container mx-auto ${sectionSpacingClass} ${className}`}
     >
       {/** Heading */}
@@ -33,7 +44,7 @@ const TeamMembers = ({ className = "" }: TeamMembersProps) => {
       {/** List */}
       <ul className="flex flex-wrap gap-20 justify-center items-center text-center">
         {teamMembersList?.map((member, idx) => (
-          <li key={idx}>
+          <li data-aos="fade-in" data-delay={idx * 120} key={idx}>
             <TeamMember member={member} />
           </li>
         ))}

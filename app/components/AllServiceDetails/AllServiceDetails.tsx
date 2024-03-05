@@ -19,8 +19,11 @@ const AllServiceDetails = ({
     <section className={`container mx-auto ${className}`}>
       {/** Description */}
       <div className="text-center md:text-left">
-        <Title text="Details" size="small" />
-        <Description text={service.longDescription as string} />
+        <Title text="Details" size="small" animation="fade-in" />
+        <Description
+          text={service.longDescription as string}
+          animation="fade-in"
+        />
       </div>
     </section>
   );

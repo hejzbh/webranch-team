@@ -21,6 +21,7 @@ const ProjectDescription = ({
 }: ProjectDescriptionProps) => {
   return (
     <div
+      data-aos="fade-in"
       className={`flex items-center justify-center flex-col space-y-10 md:justify-between md:items-start lg:items-center lg:flex-row lg:space-y-0 lg:space-x-10 ${className}`}
     >
       {/** Description text */}

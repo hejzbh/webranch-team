@@ -20,7 +20,7 @@ const ProjectHeading = ({
   projectSummaryCards = [],
 }: ProjectHeadingProps) => {
   return (
-    <div className={`${className}`}>
+    <div data-aos="fade-in" className={`${className}`}>
       {/** Thumbnail */}
       <Image
         loading="lazy"

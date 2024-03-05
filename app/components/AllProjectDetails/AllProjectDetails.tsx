@@ -42,6 +42,7 @@ const AllProjectDetails = ({
         title="What client said"
         description={project.testimonialText}
         reversed
+        animation="fade-in"
       />
       {/** Project Gallery */}
       <ProjectGallery

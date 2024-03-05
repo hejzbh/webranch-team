@@ -46,6 +46,7 @@ const ServiceDetailsPage = ({ params }: ServiceDetailsPageProps) => {
         pageTitle={serviceDetails.name}
         breadcrumbs={getServicesBreadcrumbs(params.serviceSlug)}
         backgroundImgSRC="/images/line-2.webp"
+        animation="fade-in"
       />
       <div className="relative z-[1]">
         {/** Details */}
