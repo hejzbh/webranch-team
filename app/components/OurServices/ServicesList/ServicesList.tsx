@@ -17,7 +17,7 @@ const ServicesList = ({ className = "" }: ServicesListProps) => {
       {services?.map((service, idx) => (
         <li
           data-aos="fade-in"
-          data-aos-delay={idx * 125}
+          data-aos-delay={idx * 100}
           className="text-center group"
           key={idx}
         >
