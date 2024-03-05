@@ -106,21 +106,43 @@ export const projectsList: Project[] = [
         ],
         imageSRC: "/images/projects/webonify/multiple-designs.png",
       },
-      // 1) -------------
+      // 2) -------------
       {
         title: "Monitor daily progress for multiple sales channels",
         description:
           "Stay informed about your business's daily performance, enabling timely adjustments and informed decision-making",
         features: [
-          "Choose from a variety of pre-designed templates",
-          "Customize colors, fonts, and layouts",
-          "Add your logo and branding elements",
-          "Integrate specialized features and plugins",
-          "Request a completely custom design tailored to your brand",
-          "Integrate your existing design if you already have one",
+          "Number of orders",
+          "Total revenue generated from webshop sales",
+          "Orders awaiting resolution",
+          "Products stock count",
+          "Number of new customers",
+          "Top-selling products analysis",
+          "Pending transactions",
+          "Overall activity",
           "& more",
         ],
         imageSRC: "/images/projects/webonify/track-progress.png",
+      },
+      // 3) -------------
+      {
+        title: "Total Product Control",
+        description:
+          "Take full command of your products with our comprehensive management tools.",
+        features: [
+          "Easily add, delete, or edit products",
+          "Select distribution channels",
+          "Organize products into collections",
+          "Manage product variants",
+          "Set prices in multiple currencies",
+          "Choose tax rates for products",
+          "Provide detailed descriptions",
+          "Specify warehouse locations and availability",
+          "Upload images",
+          "Discount & Preorder options",
+          "& more",
+        ],
+        imageSRC: "/images/projects/webonify/products.png",
       },
     ],
     testimonialText: `Working with Webranch Team to develop our website was an absolute pleasure. (space) Their team's expertise and attention to detail truly exceeded our expectations. The end result is a stunning website that perfectly captures the essence of our brand and showcases our innovative AI technologies and immersive experiences.`,
