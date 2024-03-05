@@ -59,7 +59,7 @@ export const services: Service[] = [
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. (space) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut.`,
-    slug: "4",
+    slug: "5",
   },
   {
     name: "Custom Solutions",
