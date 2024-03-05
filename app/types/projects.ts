@@ -10,6 +10,7 @@ export interface Project {
   summaryCards: ProjectSummaryCard[];
   testimonialText: string;
   technologies: Technology[];
+  benefits?: WebonifyBenefit[];
   isWebonifyProject?: boolean;
 }
 
@@ -17,6 +18,13 @@ export interface ProjectSummaryCard {
   title: string;
   value: string;
   href?: string;
+}
+
+export interface WebonifyBenefit {
+  title: string;
+  description?: string;
+  features: string[];
+  imageSRC: string;
 }
 
 export type Technology =

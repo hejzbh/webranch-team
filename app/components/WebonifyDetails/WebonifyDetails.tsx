@@ -8,6 +8,7 @@ import { Project } from "@/app/types/projects";
 const WebonifyHeading = dynamic(
   () => import("@/app/components/WebonifyDetails/WebonifyHeading")
 );
+const WebonifyBenefits = dynamic(() => import("./WebonifyBenefits"));
 // Interface
 interface WebonifyDetailsProps {
   className?: string;
@@ -29,6 +30,8 @@ const WebonifyDetails = ({ className = "", project }: WebonifyDetailsProps) => {
           className="w-full drop-shadow-xl rounded-3xl"
         />
       </div>
+      {/** Bnefits */}
+      <WebonifyBenefits benefits={project.benefits as []} />
     </section>
   );
 };

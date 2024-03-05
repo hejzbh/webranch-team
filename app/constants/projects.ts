@@ -2,6 +2,7 @@ import { Project } from "../types/projects";
 
 /**Welcome to the world of Tuffex, where our goal was to create an application that is more than just a platform - it was envisioned to be pixel-perfect to the last detail. With a sharp focus on speed, simplicity, and power, Tuffex is designed to provide a seamless experience to users worldwide. With an intuitive interface that takes your breath away and technological capabilities that reach into infinity, this platform represents a symbiosis of elegant design and revolutionary functionality. Dive into the world of Tuffex and experience the music revolution firsthand. */
 export const projectsList: Project[] = [
+  // 1) ---------------------------------------------------------------------------------
   {
     name: "Tuffex",
     images: [
@@ -41,6 +42,7 @@ export const projectsList: Project[] = [
     testimonialText: `Webranch exceeded our expectations in every aspect. (space) Their attention to detail, professionalism, and dedication to our project were truly commendable. From the initial concept discussions to the final delivery, they demonstrated expertise and creativity at every step.`,
     technologies: ["html", "css", "js", "react", "next", "tailwind"],
   },
+  // 2) ---------------------------------------------------------------------------------
   {
     name: "Zerost",
     images: [
@@ -76,6 +78,7 @@ export const projectsList: Project[] = [
     testimonialText: `Working with Webranch Team to develop our website was an absolute pleasure. (space) Their team's expertise and attention to detail truly exceeded our expectations. The end result is a stunning website that perfectly captures the essence of our brand and showcases our innovative AI technologies and immersive experiences.`,
     technologies: ["html", "css", "js", "react", "next", "tailwind"],
   },
+  // 3) ---------------------------------------------------------------------------------
   {
     name: "Webonify",
     images: ["/images/projects/webonify/thumbnail.webp"],
@@ -85,11 +88,40 @@ export const projectsList: Project[] = [
     largeThumbnailSRC: "/images/projects/webonify/cartoon.webp",
     slug: "3",
     summaryCards: [],
-    features: [
-      "Responsive",
-      "Reveal Animate",
-      "Pixel Perfect",
-      "SEO Optimized",
+    features: [],
+    benefits: [
+      // 1) -------------
+      {
+        title: "Edit your shop as you like",
+        description:
+          "Although Webonify is a ready-made system, there is the possibility of customizing the design of your web shop according to your preferences.",
+        features: [
+          "Choose from a variety of pre-designed templates",
+          "Customize colors, fonts, and layouts",
+          "Add your logo and branding elements",
+          "Integrate specialized features and plugins",
+          "Request a completely custom design tailored to your brand",
+          "Integrate your existing design if you already have one",
+          "& more",
+        ],
+        imageSRC: "/images/projects/webonify/multiple-designs.png",
+      },
+      // 1) -------------
+      {
+        title: "Monitor daily progress for multiple sales channels",
+        description:
+          "Stay informed about your business's daily performance, enabling timely adjustments and informed decision-making",
+        features: [
+          "Choose from a variety of pre-designed templates",
+          "Customize colors, fonts, and layouts",
+          "Add your logo and branding elements",
+          "Integrate specialized features and plugins",
+          "Request a completely custom design tailored to your brand",
+          "Integrate your existing design if you already have one",
+          "& more",
+        ],
+        imageSRC: "/images/projects/webonify/track-progress.png",
+      },
     ],
     testimonialText: `Working with Webranch Team to develop our website was an absolute pleasure. (space) Their team's expertise and attention to detail truly exceeded our expectations. The end result is a stunning website that perfectly captures the essence of our brand and showcases our innovative AI technologies and immersive experiences.`,
     technologies: ["html", "css", "js", "react", "next", "tailwind"],
