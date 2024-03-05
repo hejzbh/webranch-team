@@ -35,6 +35,36 @@ const ProjectDetailsPage = async ({ params }: ProjectDetailsPageProps) => {
     return notFound();
   }
 
+  if (projectDetails.isWebonifyProject) {
+    const WebonifyDetails = dynamic(
+      () => import("@/app/components/WebonifyDetails"),
+      {
+        loading: () => <>...</>,
+      }
+    );
+
+    return (
+      <main className="min-h-screen">
+        {/** Page Heading */}
+        <PageHeading
+          pageTitle={projectDetails.name}
+          breadcrumbs={getPortfolioBreadcrumbs(params.projectSlug)}
+          backgroundImgSRC="/images/line.webp"
+          link={
+            projectDetails?.productionLink
+              ? {
+                  title: "VIEW DEMO",
+                  href: projectDetails.productionLink,
+                }
+              : undefined
+          }
+        />
+        {/** Details */}
+        <WebonifyDetails project={projectDetails} />
+      </main>
+    );
+  }
+
   return (
     <main className="min-h-screen">
       {/** Page Heading */}

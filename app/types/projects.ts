@@ -10,6 +10,7 @@ export interface Project {
   summaryCards: ProjectSummaryCard[];
   testimonialText: string;
   technologies: Technology[];
+  isWebonifyProject?: boolean;
 }
 
 export interface ProjectSummaryCard {
