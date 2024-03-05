@@ -1,7 +1,7 @@
 // ⭐ HERO
 export const HERO_PRETITLE_TEXT: string = "Turning Ideas into Reality";
 export const HERO_TITLE_TEXT: string =
-  "Trust the experts and be amazed by the results";
+  "Trust the Webranch and be amazed by the results";
 export const HERO_DESCRIPTION_TEXT: string =
   "Utilize Amel and Hazim's skills for top-quality web, mobile, and digital solutions, guiding you towards success.";
 
