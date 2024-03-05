@@ -21,7 +21,7 @@ interface LighthouseProps {
 const Lighthouse = ({ className = "" }: LighthouseProps) => {
   return (
     <section
-      className={`container mx-auto ${sectionSpacingClass} ${className}`}
+      className={`container mx-auto overflow-hidden ${sectionSpacingClass} ${className}`}
     >
       {/** Heading */}
       <PreTitle
