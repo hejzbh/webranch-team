@@ -20,6 +20,7 @@ export const services: Service[] = [
     shortDescription:
       "Empowering your web design with seamless integration and intuitive content management",
     longDescription: `Innovate beyond boundaries with our <b>Webflow</b> integration service at <b>Webranch</b>. We understand the power and flexibility that Webflow brings to the table, and we're here to harness it to its fullest <b>potential</b> for your projects. (space)
+    <b>Webflow with no limits</b>: Webflow has its limits, but with us that's not a problem. We can always insert our custom solution in your Webflow application. (space)
     <b>Visual Development Environment</b>: With Webflow's intuitive visual interface, we craft pixel-perfect designs and interactions, ensuring every element aligns with your brand's identity and objectives. (space)
   <b>Code-Free Design</b>: Say goodbye to coding headaches. With Webflow, we can bring your design vision to life without writing a single line of code, streamlining the development process and accelerating time-to-market. (space)
   <b>Responsive Design</b>: In today's multi-device landscape, responsiveness is paramount. We ensure your website looks flawless on every screen size, from desktops to smartphones. (space)
