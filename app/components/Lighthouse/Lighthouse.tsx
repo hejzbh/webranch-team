@@ -60,7 +60,7 @@ const Lighthouse = ({ className = "" }: LighthouseProps) => {
               return (
                 <li
                   data-aos="fade-in"
-                  data-aos-delay={idx * 250}
+                  data-aos-delay={idx * 190}
                   className="flex items-center space-y-2 sm:space-y-0 sm:space-x-5 justify-center text-center sm:text-left lg:justify-start flex-col sm:flex-row"
                   key={idx}
                 >
