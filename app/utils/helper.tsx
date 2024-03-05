@@ -4,9 +4,11 @@ export const spaceBetweenText = (text: string) => {
   if (!splittedText.length) return text;
 
   return splittedText.map((paragraph, i) => (
-    <span key={i} className="block mt-6">
-      {paragraph}
-    </span>
+    <span
+      dangerouslySetInnerHTML={{ __html: paragraph }}
+      key={i}
+      className="block mt-6"
+    ></span>
   ));
 };
 
