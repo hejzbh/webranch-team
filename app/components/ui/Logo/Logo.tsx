@@ -5,14 +5,15 @@ import Image from "next/image";
 // Interface
 interface LogoProps {
   className?: string;
+  src?: string;
 }
 
-const Logo = ({ className = "" }: LogoProps) => {
+const Logo = ({ className = "", src = "/images/logo-col.webp" }: LogoProps) => {
   return (
     <Link href="/" title="Home">
       <Image
         className={`w-full max-w-[120px] md:max-w-[150px] ${className}`}
-        src="/images/logo.webp"
+        src={src}
         loading="lazy"
         width={150}
         height={150}
