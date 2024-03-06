@@ -11,7 +11,7 @@ const WhyWorkWithUs = dynamic(() => import("@/app/components/WhyWorkWithUs"));
 const ContactUs = dynamic(() => import("@/app/components/ContactUs"));
 
 export const metadata: Metadata = {
-  title: "Services - Webranch: Elevate Your Digital Presence",
+  title: "Services - Elevate Your Digital Presence",
   description:
     "Explore the comprehensive services offered by Webranch, including web & app development, Webflow expertise, and other digital solutions. Discover how we can empower your success story and take your digital presence to the next level.",
   keywords: [
