@@ -36,6 +36,7 @@ export const metadata: Metadata = {
       "https://i.ibb.co/TPc5wkd/White-Dusk-Blue-And-Nile-Blue-Geometric-Web-Design-And-Development-Presentation.png",
     ],
   },
+  applicationName: "Webranch",
 };
 
 const AboutUsPage = () => {

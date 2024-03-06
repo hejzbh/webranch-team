@@ -1,6 +1,7 @@
 import React from "react";
 // Next
 import dynamic from "next/dynamic";
+import { Metadata } from "next";
 // Constants
 import { getServicesBreadcrumbs } from "../constants/breadcrumbs";
 // Components
@@ -9,24 +10,27 @@ const OurServices = dynamic(() => import("@/app/components/OurServices"));
 const WhyWorkWithUs = dynamic(() => import("@/app/components/WhyWorkWithUs"));
 const ContactUs = dynamic(() => import("@/app/components/ContactUs"));
 
-import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Our Services - Webranch",
+  title: "Services - Webranch: Elevate Your Digital Presence",
   description:
-    "Explore our comprehensive range of digital services at Webranch. From web development to app development, e-commerce solutions, and custom coding, trust our dynamic team led by Amel and Hazim to guide you towards success.",
+    "Explore the comprehensive services offered by Webranch, including web & app development, Webflow expertise, and other digital solutions. Discover how we can empower your success story and take your digital presence to the next level.",
   keywords: [
-    "Digital services",
-    "Web development",
-    "App development",
-    "E-commerce solutions",
-    "Custom coding",
-    "Webflow integration",
-    "Game development",
-    "Amel and Hazim",
-    "Dynamic team",
-    "Top-quality services",
-    "Upwork",
+    "services",
+    "Webranch services",
+    "web development",
+    "app development",
+    "Webflow",
+    "digital solutions",
+    "freelance",
+    "UpWork",
+    "Amel",
+    "Hazim",
   ],
+  openGraph: {
+    images: [
+      "https://i.ibb.co/rfKmKGz/White-Dusk-Blue-And-Nile-Blue-Geometric-Web-Design-And-Development-Presentation-3.jpg",
+    ],
+  },
   applicationName: "Webranch",
 };
 
