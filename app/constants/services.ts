@@ -52,7 +52,7 @@ export const services: Service[] = [
   },
   {
     name: "E-Commerce",
-    imageSRC: "/images/icons/design.png",
+    imageSRC: "/images/icons/ecommerce.webp",
     shortDescription:
       "Maximize global sales with our advanced e-commerce system called Webonify",
     longDescription: `Maximize global sales with our advanced e-commerce system called <a href="https://www.webranch.team/portfolio/webonify"><b class="underline text-common-purple">Webonify</b></a>`,
