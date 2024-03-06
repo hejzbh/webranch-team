@@ -54,11 +54,8 @@ export const services: Service[] = [
     name: "E-Commerce",
     imageSRC: "/images/icons/design.png",
     shortDescription:
-      "Maximize global sales with our advanced platform featuring intuitive dashboards and seamless integration",
-    longDescription: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-      dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-      dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. (space) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-      dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut.`,
+      "Maximize global sales with our advanced e-commerce system called Webonify",
+    longDescription: `Maximize global sales with our advanced e-commerce system called <a href="https://www.webranch.team/portfolio/webonify"><b class="underline text-common-purple">Webonify</b></a>`,
     slug: "e-commerce",
   },
   {
