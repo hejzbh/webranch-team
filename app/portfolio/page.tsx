@@ -1,5 +1,6 @@
 import React from "react";
 // Next
+import { Metadata } from "next";
 import dynamic from "next/dynamic";
 // Constants
 import { getPortfolioBreadcrumbs } from "../constants/breadcrumbs";
@@ -11,6 +12,29 @@ const ContactUs = dynamic(() => import("@/app/components/ContactUs"));
 const BackgroundImage = dynamic(
   () => import("@/app/components/ui/BackgroundImage")
 );
+
+export const metadata: Metadata = {
+  title: "Portfolio - Explore Our Work at Webranch",
+  description:
+    "Discover the portfolio of Webranch and explore our extensive range of projects showcasing our expertise in web & app development, Webflow, and other digital solutions. Dive into our success stories and see how we can elevate your digital presence.",
+  keywords: [
+    "portfolio",
+    "Webranch portfolio",
+    "web development",
+    "app development",
+    "Webflow",
+    "digital solutions",
+    "freelance",
+    "UpWork",
+    "Amel",
+    "Hazim",
+  ],
+  openGraph: {
+    images: [
+      "https://i.ibb.co/9c3bpbf/White-Dusk-Blue-And-Nile-Blue-Geometric-Web-Design-And-Development-Presentation-2.jpg",
+    ],
+  },
+};
 
 const PortfolioPage = () => {
   return (
