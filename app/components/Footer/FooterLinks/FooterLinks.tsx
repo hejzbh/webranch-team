@@ -25,10 +25,10 @@ const FooterLinks = ({ className = "" }: FooterLinksProps) => {
       className={`grid gap-10 sm:gap-6  grid-cols-1 sm:grid-cols-2 justify-center items-center lg:grid-cols-4 ${className}`}
     >
       {/** Agency Details */}
-      <li className="flex flex-col justify-start items-start">
-        <CompanyShortInfo />
+      <li className="flex flex-col justify-center items-center sm:items-start text-center sm:text-left">
+        <CompanyShortInfo className="flex flex-col justify-center items-center sm:justify-start sm:items-start" />
         <Link
-          className="text-[17px] font-[500] transition-all duration-300 ease-in-out text-nav-link-hover flex items-center"
+          className="text-[17px] font-[500] transition-all duration-300 ease-in-out text-nav-link-hover flex items-center mt-5"
           title="Contact us via email"
           href={`mailto:${EMAIL}`}
         >
