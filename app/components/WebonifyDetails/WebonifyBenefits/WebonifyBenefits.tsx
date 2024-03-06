@@ -18,14 +18,9 @@ const WebonifyBenefits = ({
 }: WebonifyBenefitsProps) => {
   return (
     <section className={`${sectionSpacingClass} ${className}`}>
-      <ul>
+      <ul className="space-y-20">
         {benefits?.map((benefit, idx) => (
-          <li
-            data-aos="fade-in"
-            data-aos-delay="0"
-            className="border-b-2 py-10"
-            key={idx}
-          >
+          <li data-aos="fade-in" key={idx}>
             <WebonifyBenefitCard benefit={benefit} reversed={idx % 2 === 0} />
           </li>
         ))}
