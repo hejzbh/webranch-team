@@ -12,7 +12,7 @@ export const services: Service[] = [
     <b>Performance Optimization</b>: We implements best practices to ensure your website loads quickly and performs efficiently, maximizing user retention and search engine rankings. (space)
     <b>Scalability</b>: Whether your business experiences rapid growth or requires periodic updates, our scalable solutions can easily accommodate your evolving needs. (space)
     <b>Custom E-commerce System</b>: Stand out from the competition with our custom e-commerce system tailored to your business requirements, offering a seamless online shopping experience for your customers.`,
-    slug: "1",
+    slug: "web-development",
   },
   {
     name: "Webflow",
@@ -26,7 +26,7 @@ export const services: Service[] = [
   <b>Responsive Design</b>: In today's multi-device landscape, responsiveness is paramount. We ensure your website looks flawless on every screen size, from desktops to smartphones. (space)
   <b>Custom Animations and Interactions</b>: Elevate user engagement with custom animations and interactions that add depth and personality to your website, creating memorable user experiences. (space)
   <b>Seamless Hosting and Deployment</b>: Once your website is ready, we handle the hosting and deployment process seamlessly, ensuring a smooth transition from design to launch.`,
-    slug: "2",
+    slug: "webflow",
   },
   {
     name: "App Development",
@@ -34,7 +34,7 @@ export const services: Service[] = [
     shortDescription:
       "Building personalized mobile applications that perfectly match your business goals and needs",
     longDescription: `At <b>Webranch</b>, we specialize in crafting <b>high-quality</b> mobile applications using React Native, a cutting-edge technology that allows us to build powerful, cross-platform apps with efficiency and precision. (space) Whether you're a startup looking to make a splash in the mobile market or an established business seeking to expand your digital footprint, our team of <b>skilled developers</b> is here to turn your app idea into reality.`,
-    slug: "3",
+    slug: "app-development",
   },
   {
     name: "Game Development",
@@ -48,7 +48,7 @@ export const services: Service[] = [
   <b>JavaScript Mastery</b>: With our expertise in JavaScript, we harness the full power of the language to build robust and scalable games that run seamlessly across various platforms and devices.  (space)
   <b>Engaging Gameplay Mechanics</b>: From character movement and physics to level design and progression systems, we focus on creating gameplay mechanics that keep players hooked from start to finish.  (space)
   <b>Stunning Visuals</b>: While our focus is on logic and gameplay, we also understand the importance of eye-catching visuals. We use JavaScript libraries and frameworks to create visually appealing 2D graphics and animations that enhance the overall gaming experience.`,
-    slug: "4",
+    slug: "game-development",
   },
   {
     name: "E-Commerce",
@@ -59,7 +59,7 @@ export const services: Service[] = [
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut. (space) Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
       dolorum voluptas beatae corrupti sed accusamus nesciunt fuga ad vero aut.`,
-    slug: "5",
+    slug: "e-commerce",
   },
   {
     name: "Custom Solutions",
@@ -74,6 +74,6 @@ export const services: Service[] = [
     <b>Backend Development</b>: Our proficiency in languages like Python and frameworks like Django enables us to develop robust and scalable backend solutions to support your applications.(space)
     <b>C++ Expertise</b>: For performance-critical applications, we utilize C++ to build efficient and high-performance software solutions.(space)
     <b>Continuous Learning</b>: We stay up-to-date with the latest technologies and frameworks to ensure that we can offer you the most innovative and effective solutions for your projects.`,
-    slug: "6",
+    slug: "custom-solutions",
   },
 ];
