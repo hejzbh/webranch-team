@@ -16,7 +16,7 @@ const Blog = dynamic(() => import("@/app/components/Blog"));
 export const metadata: Metadata = {
   title: "Webranch - Your Digital Solutions Partner",
   description:
-    "Discover top-quality digital solutions at Webranch. From web development to app development, e-commerce solutions, and custom coding, trust our dynamic team led by Amel and Hazim to guide you towards success. Explore our portfolio now.",
+    "Discover top-quality digital solutions at Webranch. From web development to app development, e-commerce solutions, and custom coding, trust our dynamic team led by Amel and Hazim to guide you towards success.",
   keywords: [
     "Digital solutions",
     "Web development",
