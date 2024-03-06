@@ -15,7 +15,6 @@ interface FooterProps {
 const Footer = ({ className = "" }: FooterProps) => {
   return (
     <footer
-      data-aos="fade-in"
       className={`relative z-[1] pt-20 pb-10 rounded-t-3xl
      ${className}`}
     >
