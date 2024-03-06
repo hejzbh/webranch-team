@@ -26,6 +26,20 @@ interface ServiceDetailsPageProps {
   };
 }
 
+export async function generateMetadata({ params }: ServiceDetailsPageProps) {
+  const service: Service | undefined = services.find(
+    (service) => service.slug === params.serviceSlug
+  );
+
+  return {
+    title: `${service?.name} - Webranch service`,
+    description: service?.shortDescription,
+    openGraph: {
+      images: [service?.imageSRC],
+    },
+  };
+}
+
 function getServiceDetails(serviceSlug: string) {
   const service: Service | undefined = services.find(
     (service) => service.slug === serviceSlug
