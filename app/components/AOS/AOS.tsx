@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 
 const AOSProvider = () => {
   useEffect(() => {
-    AOS.init({ once: true, offset: 30 });
+    AOS.init({ once: true, offset: 0 });
   }, []);
 
   return null;
