@@ -15,7 +15,12 @@ const ServicesList = ({ className = "" }: ServicesListProps) => {
       className={`grid services-list-sm lg:grid-cols-services-list-xl justify-center gap-10 gap-y-20 ${className}`}
     >
       {services?.map((service, idx) => (
-        <li data-aos="fade-in" className="text-center group" key={idx}>
+        <li
+          data-aos="fade-in"
+          data-aos-delay={idx * 20}
+          className="text-center group"
+          key={idx}
+        >
           {/** Icon */}
           <Image
             loading="lazy"
