@@ -96,12 +96,11 @@ export const projectsList: Project[] = [
         description:
           "Although Webonify is a ready-made system, there is the possibility of customizing the design of your web shop according to your preferences.",
         features: [
-          "Choose from a variety of pre-designed templates",
+          "Choose from pre-designed templates",
           "Customize colors, fonts, and layouts",
           "Add your logo and branding elements",
           "Integrate specialized features and plugins",
-          "Request a completely custom design tailored to your brand",
-          "Integrate your existing design if you already have one",
+          "Request a completely custom design",
           "& more",
         ],
         imageSRC: "/images/projects/webonify/multiple-designs.png",
@@ -112,13 +111,9 @@ export const projectsList: Project[] = [
         description:
           "Stay informed about your business's daily performance, enabling timely adjustments and informed decision-making",
         features: [
-          "Number of orders",
-          "Total revenue generated from webshop sales",
-          "Orders awaiting resolution",
-          "Products stock count",
-          "Number of new customers",
-          "Top-selling products analysis",
-          "Pending transactions",
+          "Track orders, revenue, and stock",
+          "Analyze top-selling products",
+          "Monitor new customers and pending transactions",
           "Overall activity",
           "& more",
         ],
@@ -130,19 +125,89 @@ export const projectsList: Project[] = [
         description:
           "Take full command of your products with our comprehensive management tools.",
         features: [
-          "Easily add, delete, or edit products",
-          "Select distribution channels",
-          "Organize products into collections",
-          "Manage product variants",
-          "Set prices in multiple currencies",
-          "Choose tax rates for products",
-          "Provide detailed descriptions",
-          "Specify warehouse locations and availability",
-          "Upload images",
-          "Discount & Preorder options",
+          "Add, delete, or edit products",
+          "Organize products into collections and categories",
+          "Manage product variants and pricing",
+          "Provide detailed descriptions and images",
+          "Choose tax rates and sales channels",
           "& more",
         ],
         imageSRC: "/images/projects/webonify/products.png",
+      },
+      // 4) ------------
+      {
+        title: "Efficient Order Management",
+        description:
+          "Streamline your order processing with our comprehensive suite of order management tools.",
+        features: [
+          "Track order details",
+          "Manage payments and refunds",
+          "Access customer information",
+          "Edit orders",
+          "& more",
+        ],
+        imageSRC: "/images/projects/webonify/order-managment.png",
+      },
+      // 5) ------------------------
+      {
+        title: "Collections & Categories",
+        description:
+          "Organize your products seamlessly into collections and categories for easy navigation and improved customer experience.",
+        features: [
+          "Create custom collections to showcase curated product sets",
+          "Organize products into categories for intuitive browsing",
+          "Enhance user experience with easy navigation and discovery",
+          "Optimize product visibility and accessibility",
+          "& more",
+        ],
+        imageSRC: "/images/projects/webonify/categories.png",
+      },
+      // 6) ------------
+      {
+        title: "Discounts, Vouchers, and Gift Cards",
+        description:
+          "Boost sales and customer loyalty with <b>Webonify</b> versatile discounting and gifting options.",
+        features: [
+          "Create customizable gift cards and vouchers",
+          "Apply discounts to products, categories, or collections",
+          "Track and analyze campaign effectiveness",
+          "& more",
+        ],
+        imageSRC: "/images/projects/webonify/gift-cards.png",
+      },
+      // 7) -------------
+      {
+        title: "Customizable Payment Methods",
+        description:
+          "Offer convenience and flexibility by integrating preferred payment methods, including custom options.",
+        features: [
+          "Secure transactions with PayPal",
+          "Enable card payments",
+          "Cash on delivery",
+          "Support popular gateways and add custom methods",
+          "& more",
+        ],
+        imageSRC: "/images/projects/webonify/payments.png",
+      },
+      // 8) -------------
+      {
+        title: "Endless Customization",
+        description:
+          "Manage key aspects of your store and operations with ease",
+        features: [
+          "Customers: Authentication options and user databases",
+          "Taxes: Manage tax rates effortlessly",
+          "Staff Settings: Control employee permissions",
+          "Shipping Settings: Define shipping methods",
+          "Multichannel: Expand sales channels",
+          "Content Management: Create and manage content pages",
+          "Site Settings: Adjust site configurations",
+          "Plugins: Extend functionality with plugins",
+          "Webhooks & Events: Integrate and automate",
+
+          "& more",
+        ],
+        imageSRC: "/images/projects/webonify/customize.png",
       },
     ],
     testimonialText: `Working with Webranch Team to develop our website was an absolute pleasure. (space) Their team's expertise and attention to detail truly exceeded our expectations. The end result is a stunning website that perfectly captures the essence of our brand and showcases our innovative AI technologies and immersive experiences.`,
