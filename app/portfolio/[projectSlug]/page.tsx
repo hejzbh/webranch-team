@@ -42,7 +42,6 @@ const ProjectDetailsPage = async ({ params }: ProjectDetailsPageProps) => {
         loading: () => <>...</>,
       }
     );
-    const ContactUs = dynamic(() => import("@/app/components/ContactUs"));
 
     return (
       <main className="min-h-screen">
@@ -62,8 +61,6 @@ const ProjectDetailsPage = async ({ params }: ProjectDetailsPageProps) => {
         />
         {/** Details */}
         <WebonifyDetails project={projectDetails} />
-        {/** Contact us */}
-        <ContactUs />
       </main>
     );
   }
