@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     "Upwork",
   ],
   applicationName: "Webranch",
+  openGraph: {
+    images: [
+      "https://i.ibb.co/7J84fvC/White-Dusk-Blue-And-Nile-Blue-Geometric-Web-Design-And-Development-Presentation.webp",
+    ],
+  },
 };
 
 export default function Home() {

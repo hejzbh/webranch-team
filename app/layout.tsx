@@ -3,7 +3,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import dynamic from "next/dynamic";
 // Components
-import OGImage from "./components/SEO/OGImage";
+
 const Header = dynamic(() => import("@/app/components/Header"));
 const ScrollToTop = dynamic(() => import("@/app/components/ScrollToTop"));
 const Footer = dynamic(() => import("@/app/components/Footer"));
@@ -21,7 +21,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <OGImage ogImageSRC="https://ibb.co/wN3skyg" />
       <body className={poppinsFont.className} style={{ minHeight: "200vh" }}>
         <AOS />
         <Header />
