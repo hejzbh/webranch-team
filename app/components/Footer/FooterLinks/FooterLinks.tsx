@@ -25,7 +25,7 @@ const FooterLinks = ({ className = "" }: FooterLinksProps) => {
       className={`grid gap-10 sm:gap-6  grid-cols-1 sm:grid-cols-2 justify-center items-center lg:grid-cols-4 ${className}`}
     >
       {/** Agency Details */}
-      <li className="flex flex-col justify-center items-center">
+      <li className="flex flex-col justify-start items-start">
         <CompanyShortInfo />
         <Link
           className="text-[17px] font-[500] transition-all duration-300 ease-in-out text-nav-link-hover flex items-center"

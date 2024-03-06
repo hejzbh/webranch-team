@@ -11,6 +11,7 @@ export interface Project {
   testimonialText: string;
   technologies: Technology[];
   benefits?: WebonifyBenefit[];
+  ogImageSRC?: string;
   isWebonifyProject?: boolean;
 }
 

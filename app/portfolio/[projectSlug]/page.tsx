@@ -25,9 +25,9 @@ export async function generateMetadata({ params }: ProjectDetailsPageProps) {
   return {
     title: `${project?.name} - Webranch project`,
     description: project?.description.slice(0, 120),
-    
+
     openGraph: {
-      images: [project?.smallThumbnailSRC],
+      images: [project?.ogImageSRC || project?.smallThumbnailSRC],
     },
   };
 }

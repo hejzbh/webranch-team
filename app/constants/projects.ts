@@ -11,6 +11,7 @@ export const projectsList: Project[] = [
     smallThumbnailSRC: "/images/projects/webonify/thumbnail.webp",
     largeThumbnailSRC: "/images/projects/webonify/cartoon.webp",
     slug: "webonify",
+    ogImageSRC: "https://i.ibb.co/K5V4m1b/thumbnail.webp",
     summaryCards: [],
     features: [],
     benefits: [
@@ -154,6 +155,7 @@ export const projectsList: Project[] = [
     smallThumbnailSRC: "/images/projects/tuffex/thumbnail.webp",
     largeThumbnailSRC: "/images/projects/tuffex/small.webp",
     productionLink: "https://webranch-tuffex.netlify.app/",
+    ogImageSRC: "https://i.ibb.co/N9F2vV0/thumbnail.webp",
     slug: "tuffex",
     summaryCards: [
       { title: "Date", value: "24-12-2023" },
@@ -192,6 +194,7 @@ export const projectsList: Project[] = [
     largeThumbnailSRC: "/images/projects/zerost/thumbnail.webp",
     slug: "zerost",
     productionLink: "https://webranch-zerost.netlify.app/",
+    ogImageSRC: "https://i.ibb.co/qWcVygk/small.webp",
     summaryCards: [
       { title: "Date", value: "17-11-2023" },
       { title: "Client", value: "Anonymous" },
