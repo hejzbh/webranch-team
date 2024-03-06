@@ -15,7 +15,7 @@ interface FooterProps {
 const Footer = ({ className = "" }: FooterProps) => {
   return (
     <footer
-      className={`relative z-[1] pt-20 pb-10 rounded-t-3xl
+      className={`relative z-[1] py-10 rounded-t-3xl
      ${className}`}
     >
       {/** Background */}
