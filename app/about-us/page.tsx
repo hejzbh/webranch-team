@@ -1,6 +1,7 @@
 import React from "react";
 // Next
 import dynamic from "next/dynamic";
+import { Metadata } from "next";
 // Constants
 import { aboutUsBreadcrumbs } from "../constants/breadcrumbs";
 import {
@@ -14,6 +15,28 @@ const TeamMembers = dynamic(() => import("@/app/components/TeamMembers"));
 const Testimonials = dynamic(() => import("@/app/components/Testimonials"));
 const ContactUs = dynamic(() => import("@/app/components/ContactUs"));
 const WhyWorkWithUs = dynamic(() => import("@/app/components/WhyWorkWithUs"));
+
+export const metadata: Metadata = {
+  title: "About Us - Webranch",
+  description:
+    "Learn more about Webranch, the dynamic duo of Amel and Hazim, specializing in Web & App development, Webflow, and other digital solutions. Discover how we bring visions to life and empower your success story.",
+  keywords: [
+    "Webranch",
+    "digital solutions",
+    "web development",
+    "app development",
+    "Webflow",
+    "freelance",
+    "UpWork",
+    "Amel",
+    "Hazim",
+  ],
+  openGraph: {
+    images: [
+      "https://i.ibb.co/TPc5wkd/White-Dusk-Blue-And-Nile-Blue-Geometric-Web-Design-And-Development-Presentation.png",
+    ],
+  },
+};
 
 const AboutUsPage = () => {
   return (
