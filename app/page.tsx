@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     "Upwork",
   ],
   applicationName: "Webranch",
+  openGraph: {
+    images: ["/images/rockets.webp"],
+  },
 };
 
 export default function Home() {
