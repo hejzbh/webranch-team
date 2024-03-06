@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   ],
   applicationName: "Webranch",
   openGraph: {
-    images: ["/images/main.webp"],
+    images: ["https://ibb.co/wN3skyg"],
   },
 };
 
