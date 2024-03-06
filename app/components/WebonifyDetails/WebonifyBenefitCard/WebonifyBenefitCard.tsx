@@ -22,7 +22,7 @@ const WebonifyBenefitCard = ({
 }: WebonifyBenefitCardProps) => {
   return (
     <div
-      className={`flex justify-between space-y-10 lg:space-y-0 items-center flex-col ${
+      className={`flex justify-between items-center flex-col-reverse ${
         reversed ? "lg:flex-row-reverse" : "lg:flex-row"
       } ${className}`}
     >
@@ -34,7 +34,7 @@ const WebonifyBenefitCard = ({
           className="my-4 mb-6"
         />
         {/** Features */}
-        <ul className="space-y-3 text-left">
+        <ul className="space-y-3 text-left ">
           {benefit.features?.map((feature, idx) => (
             <li
               key={idx}
@@ -48,7 +48,7 @@ const WebonifyBenefitCard = ({
       </div>
       {/** Image */}
 
-      <div className=" lg:basis-[48%]">
+      <div className=" lg:basis-[48%] mb-10 lg:mb-0">
         <Image
           loading="lazy"
           src={benefit.imageSRC}
