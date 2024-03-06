@@ -7,7 +7,7 @@ export const projectsList: Project[] = [
     name: "Webonify",
     images: ["/images/projects/webonify/thumbnail.webp"],
     description:
-      "Zerost - a team specializing in the development of AI glasses and other technologies. (space) Our task was to carefully listen to their needs, thoroughly consider them, and dive into the work to create a website that reflects their desires. We succeeded in this endeavor - crafting a perfectly simple site tailored to the client, delivering all necessary information through an engaging and cheerful design. (space) The page speed is at a high level, optimized for all devices, and scored 100% on the Google Lighthouse test.",
+      "Webonify is a fully customizable e-commerce solution, offering a user-friendly storefront and powerful management tools, enabling businesses to swiftly launch and manage their online stores with ease.",
     smallThumbnailSRC: "/images/projects/webonify/thumbnail.webp",
     largeThumbnailSRC: "/images/projects/webonify/cartoon.webp",
     slug: "webonify",
