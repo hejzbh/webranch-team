@@ -20,6 +20,17 @@ interface ProjectDetailsPageProps {
   };
 }
 
+export async function generateMetadata({ params }: ProjectDetailsPageProps) {
+  const project = getProjectDetails(params.projectSlug);
+  return {
+    title: `${project?.name} - Webranch project`,
+    description: project?.description,
+    openGraph: {
+      images: [project?.smallThumbnailSRC],
+    },
+  };
+}
+
 function getProjectDetails(projectSlug: string) {
   const project: Project | undefined = projectsList.find(
     (project) => project.slug === projectSlug
