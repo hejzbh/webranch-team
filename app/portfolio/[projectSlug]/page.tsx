@@ -23,7 +23,11 @@ interface ProjectDetailsPageProps {
 export async function generateMetadata({ params }: ProjectDetailsPageProps) {
   const project = getProjectDetails(params.projectSlug);
   return {
-    title: `${project?.name} - Webranch project`,
+    title: `${project?.name} - ${
+      project?.isWebonifyProject
+        ? "Custom e-commerce solution platform"
+        : "Webranch project"
+    }`,
     description: project?.description.slice(0, 120).replace(/(space)/g, ""),
 
     openGraph: {
