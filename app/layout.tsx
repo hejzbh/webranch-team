@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <OGImage ogImageSRC="/images/who-we-are.webp" />
+      <OGImage ogImageSRC="/images/main.webp" />
       <body className={poppinsFont.className} style={{ minHeight: "200vh" }}>
         <AOS />
         <Header />
