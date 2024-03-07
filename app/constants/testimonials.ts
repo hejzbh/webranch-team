@@ -4,7 +4,7 @@ export const testimonialList: Testimonial[] = [
   {
     author: "Phobos",
     message:
-      "Webranch was an amazing seller to work with. I am extremely pleased with their excellent communication, high level of commitment, and eagerness to ensure that their buyers are always satisfied. They delivered work of top-notch quality and followed my instructions to the T. The website they created for me is truly unique, and I will definitely be a returning customer in the future.",
+      "Webranch was fantastic to work with. I'm very happy with their great communication, strong commitment, and dedication to customer satisfaction. They delivered high-quality work and followed my instructions perfectly. The website they made for me is truly special, and I'll definitely come back as a customer again.",
     isUpworkClient: true,
     authorProfileSRC: "/images/clients/universal.png",
     authorRole: "",
