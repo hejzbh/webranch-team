@@ -8,7 +8,7 @@ export interface Project {
   slug: string;
   features: string[];
   summaryCards: ProjectSummaryCard[];
-  testimonialText: string;
+  testimonialText?: string;
   technologies: Technology[];
   benefits?: WebonifyBenefit[];
   ogImageSRC?: string;

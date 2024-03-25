@@ -180,7 +180,42 @@ export const projectsList: Project[] = [
     testimonialText: `Webranch exceeded our expectations in every aspect. (space) Their attention to detail, professionalism, and dedication to our project were truly commendable. From the initial concept discussions to the final delivery, they demonstrated expertise and creativity at every step.`,
     technologies: ["html", "css", "js", "react", "next", "tailwind"],
   },
+
   // 3) ---------------------------------------------------------------------------------
+  {
+    name: "Webranch Talk",
+    images: [
+      "/images/projects/webranch-talk/thumbnail.webp",
+      "/images/projects/webranch-talk/image1.webp",
+    ],
+    description: `<b>Webranch Talk</b> is our latest application designed to streamline <b>communication between our team and our clients</b>, particularly in <b>task management</b>. It allows us to receive tasks from clients with all relevant information, such as deadlines and additional requirements, and efficiently manage these tasks. (space)
+
+      The application includes <b>real-time</b> chat, video calls, audio calls, servers, channels within servers, projects, to-do lists, reminders, and much more related to task management.`,
+    smallThumbnailSRC: "/images/projects/webranch-talk/thumbnail.webp",
+    largeThumbnailSRC: "/images/projects/webranch-talk/thumbnail.webp",
+    slug: "webranch-talk",
+
+    ogImageSRC: "https://i.ibb.co/sVL6m10/k-OCAc-ZWib-OU-11zon.webp",
+    summaryCards: [
+      { title: "Date", value: "25-3-2024" },
+      { title: "Client", value: "Webranch" },
+      { title: "Backend", value: "Mongo DB" },
+      {
+        title: "Location",
+        value: "Remote",
+      },
+    ],
+    features: [
+      "Task Managment",
+      "Chatting",
+      "Audio & Video calls",
+      "Permissions",
+      "Responsive",
+      "Pixel Perfect",
+    ],
+    technologies: ["html", "css", "js", "react", "next", "tailwind"],
+  },
+  // 4) ------------------------------------------------------------------------
   {
     name: "Zerost",
     images: [

@@ -36,14 +36,16 @@ const AllProjectDetails = ({
         className="my-20 "
       />
       {/** Testimonial (What client said) */}
-      <TextWithImage
-        className="border-y-2 py-20"
-        imageSRC="/images/happyClient.webp"
-        title="What client said"
-        description={project.testimonialText}
-        reversed
-        animation="fade-in"
-      />
+      {project.testimonialText && (
+        <TextWithImage
+          className="border-y-2 py-20"
+          imageSRC="/images/happyClient.webp"
+          title="What client said"
+          description={project.testimonialText}
+          reversed
+          animation="fade-in"
+        />
+      )}
       {/** Project Gallery */}
       <ProjectGallery
         images={project.images}
