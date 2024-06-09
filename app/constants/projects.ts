@@ -139,6 +139,35 @@ export const projectsList: Project[] = [
     technologies: ["html", "css", "js", "react", "next", "tailwind"],
     isWebonifyProject: true,
   },
+  {
+    name: "Semla",
+    images: [
+      "/images/projects/semla/thumbnail.webp",
+      "/images/projects/semla/mobile.webp",
+    ],
+    description: `Webflow website for - Semla significantly reduces CNP fraud, refund costs & reputational risk by automating CNP due diligence processes via PSD2..`,
+    smallThumbnailSRC: "/images/projects/semla/thumbnail.webp",
+    largeThumbnailSRC: "/images/projects/semla/thumbnail.webp",
+    productionLink: "https://semla-marketing.webflow.io/",
+    ogImageSRC: "https://i.ibb.co/YkpRx5y/Screenshot-5.png",
+    slug: "semla",
+    summaryCards: [
+      { title: "Date", value: "01-06-2024" },
+      { title: "Client", value: "Semla" },
+      {
+        title: "URL",
+        value: "semla.com",
+        href: "https://semla-marketing.webflow.io/",
+      },
+      {
+        title: "Location",
+        value: "Sweden",
+      },
+    ],
+    features: ["Responsive", "Animations", "Webflow"],
+    testimonialText: `Webranch exceeded our expectations in every aspect. (space) Their attention to detail, professionalism, and dedication to our project were truly commendable. From the initial concept discussions to the final delivery, they demonstrated expertise and creativity at every step.`,
+    technologies: ["webflow"],
+  },
   // 2) ---------------------------------------------------------------------------------
   {
     name: "Tuffex",
