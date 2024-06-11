@@ -8,11 +8,11 @@ interface LogoProps {
   src?: string;
 }
 
-const Logo = ({ className = "", src = "/images/logo-col.webp" }: LogoProps) => {
+const Logo = ({ className = "", src = "/images/logo2.png" }: LogoProps) => {
   return (
     <Link href="/" title="Home">
       <Image
-        className={`w-full max-w-[120px] md:max-w-[150px] ${className}`}
+        className={`w-full max-w-[60px] md:max-w-[80px] ${className}`}
         src={src}
         loading="lazy"
         width={150}

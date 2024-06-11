@@ -34,7 +34,7 @@ const Header = ({ className = "" }: HeaderProps) => {
   return (
     <>
       <header
-        className={` z-[100] w-full top-0 border-b-[1px] border-b-tp-border-3 ${
+        className={` z-[100] w-full py-2 top-0 border-b-[1px] border-b-tp-border-3 ${
           isSticky ? "fixed bg-white shadow-sm stickyAnimation" : "absolute"
         } ${className}`}
       >
